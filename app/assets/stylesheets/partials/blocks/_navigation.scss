@@ -1,0 +1,51 @@
+.block-navigation {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: darken($brand-primary, 50%);
+	z-index: 10;
+	@media #{$xs} {
+		display: none;
+	}
+	nav.navbar {
+		min-height: auto;
+		border: 0px;
+		margin: 0px;
+		ul {
+			padding: 0px;
+			margin: 0px;
+			float: none;
+			li {
+				float: none;
+				list-style: none;
+				.logo-pink {
+					@include size(30px, 20px);
+				}
+				&:first-child {
+					margin-right: 31px;
+				}
+				&, a {
+					display: inline-block;
+					height: 94px;
+					line-height: 94px;
+				}
+				a, a:visited, a:focus, a:active {
+					padding: 0px 20px;
+					span {
+						border-color: transparent;
+					}
+				}
+				a:hover {
+					background: transparent;
+					color: white;
+				}
+				&.active {
+					a, a:visited, a:focus, a:active {
+						@extend .white-link;
+					}
+				}
+			}
+		}
+	}	
+}

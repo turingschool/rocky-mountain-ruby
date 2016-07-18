@@ -1,0 +1,52 @@
+.block-hero {
+  margin-bottom: 0px;
+  margin-top: 94px;
+  background-color: red;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 70%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 70%, 0% 100%);
+  @include gradient-vertical(darken($brand-primary, 50%), $brand-primary, 0%, 100%);
+
+  @media #{$xs} {
+    margin: 0px;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+  }
+
+  .block-content {
+  	padding: 140px 0px 400px 0px;
+    @media #{$md}, #{$sm}  {
+       padding: 140px 0px 300px 0px;
+    }
+    @media #{$xs} {
+       padding: 40px 0px 200px 0px;
+    }
+  	h3 {
+  		color: white;
+  		font-size: 34px;
+  		.logo-white {
+  			@include size(42px, 27px);
+  			position: relative;
+  			top: -3px
+  		}
+      @media #{$xs} {
+         font-size: 25px;
+      }
+  	}
+  	h1 {
+  		font-size: 70px;
+  		color: $brand-primary;
+      margin-top: 0px;
+      @media #{$xs} {
+         font-size: 55px;
+         line-height: 30px;
+         margin-top: 25px;
+      }
+  	}
+    .purchase-tickets {
+      margin-top: 15px;
+      @media #{$xs} {
+        margin-top: 40px;
+      }
+    }
+  }
+}

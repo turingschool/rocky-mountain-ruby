@@ -1,0 +1,4 @@
+$xs: "screen and (max-width: #{$screen-xs-max})";
+$sm: "screen and (min-width: #{$screen-sm-min}) and (max-width: #{$screen-sm-max})";
+$md: "screen and (min-width: #{$screen-md-min}) and (max-width: #{$screen-md-max})";
+$lg: "screen and (min-width: #{$screen-lg-min})";

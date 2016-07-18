@@ -1,0 +1,20 @@
+.block-sponsors {
+	.inner {
+		border-bottom: 2px solid #CECECE;
+	}
+	.block-content {
+		.sponsor {
+			margin-bottom: 25px;
+			.img-responsive {
+				display: inline-block;
+			}
+			@media #{$xs} {
+				text-align: center !important;
+			}
+		}
+		padding-bottom: 120px;
+		@media #{$xs} {
+			padding-bottom: 60px;
+		}		
+	}
+}

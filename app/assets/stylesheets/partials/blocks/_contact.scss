@@ -1,0 +1,106 @@
+.block-contact {
+	background: $brand-primary;
+	padding: 40px 0px;
+	.block-title {
+		color: white;
+	}
+	.block-content {
+		form {
+			width: 100%;
+			@media #{$lg}, #{$md} {
+				width: 600px;
+			}
+			.js-float-label-wrapper {
+				position: relative;
+				margin-top: 45px;
+				color: white;
+				label {
+					transition: all 0.2s ease-in-out;
+					position: absolute;
+					top: 15px;
+					left: 2px;
+					font-weight: normal;
+					opacity: 0;
+					visibility: hidden;
+					&.error {
+						position: relative;
+						top: 2px;
+						left: 2px;
+						font-size: 12px;
+						display: block;
+					    text-align: left;
+					    width: 100%;
+					    opacity: 1;
+					    visibility: visible;
+					    color: #333 !important;
+					}
+				}
+				input {
+					outline: none !important;
+					background: transparent;
+					width: 100%;
+					padding: {
+						left: 2px;
+						right: 2px;
+						top: 15px;
+						bottom: 15px;
+					}
+					border: 0px;
+					box-shadow: none;
+					border-bottom: 1px solid rgba(255, 255, 255, 0.5);					
+				}
+				input:focus + label:not(.error) {
+					visibility: visible;
+					opacity: 1;
+					top: -5px;
+					font-size: 12px;
+					color: rgba(255, 255, 255, 0.6);
+					opacity: 1;
+				}
+			}
+			.form-group-form-actions {
+				margin-top: 45px;	
+				p {
+					color: white;
+				}
+				.btn-form-submit {	
+					border-bottom: 4px solid white;	
+					border-radius: 0px;			
+					display: inline-block;
+					input {
+						outline: none;
+						padding: 0px;					
+						font-size: 16px;
+						letter-spacing: 1px;
+						text-decoration: none;
+						font-weight: 300;
+						padding-bottom: 6px;
+						background: none;
+						color: white;
+					}
+				}
+			}
+		}
+	}
+}
+
+::-webkit-input-placeholder {
+   color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;  
+}
+
+:-ms-input-placeholder {  
+   color: white;  
+}
+
+input:-webkit-autofill {
+	background: none;
+    -webkit-box-shadow: 0 0 0 0px transparent inset !important;
+}

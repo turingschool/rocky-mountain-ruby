@@ -1,0 +1,47 @@
+body {
+	font-weight: 300;
+}
+
+h2 {
+	color: #333333;
+}
+
+h3 {
+	font-size: 32px;
+}
+
+h4 {
+	color: #333333;
+	font-size: 24px;
+	margin-top: 20px;
+}
+
+a {
+	&, &:visited, &:focus, &:active {
+		display: inline-block;
+		font-size: 16px;
+		letter-spacing: 1px;
+		text-decoration: none;
+		font-weight: 300;
+		span {
+			padding-bottom: 6px;
+			border-bottom: 4px solid $brand-primary;
+		}
+	}
+	&:hover {
+		text-decoration: none;
+	}
+
+	&.white-link {
+		color: white;
+		span {
+			border-color: white;	
+		}
+	}
+	&.gray-link {
+		color: $text-color;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

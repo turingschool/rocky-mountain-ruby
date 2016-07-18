@@ -1,0 +1,25 @@
+.block-location {
+	&-title {
+		margin-bottom: 0px;
+	}
+	&-image {
+		margin-bottom: 0px;
+		background: white asset-url('denver.jpg') top right no-repeat;
+	  	background-size: cover;
+		-webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 79%);
+		clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 79%);
+	  	height: 370px;
+	  	@media #{$xs} {
+	  		height: 200px;
+	    	-webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%);
+			clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%);
+	  	}	  	
+	}
+	&-content {
+		address {
+			margin-top: 25px;
+			margin-bottom: 65px;
+		}
+		padding-bottom: 50px;
+	}
+}

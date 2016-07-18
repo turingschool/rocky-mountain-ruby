@@ -1,0 +1,7 @@
+.container {
+	.inner {
+		@media #{$lg} {
+			padding: 0px 85px;
+		}
+	}
+}

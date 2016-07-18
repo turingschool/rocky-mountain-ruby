@@ -1,0 +1,11 @@
+.block {
+	h2.block-title {
+		text-align: right;
+		font-weight: 300;
+		margin-bottom: 40px;
+		@media #{$xs} {
+			font-size: 43px;
+		}
+	}
+	margin-bottom: 55px;
+}
