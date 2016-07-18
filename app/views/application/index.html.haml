@@ -10,22 +10,22 @@
           %li
             %a{href: "#" + name.downcase}
               %span= name
-    
+
 // HERO
 .block.block-hero
   .container
     .inner
       .block-content
-        %h3 
+        %h3
           = image_tag 'logo.png', class: 'logo-white'
-          Rocky Mountain Group
+          Rocky Mountain Ruby
         %h1
           %span.hidden-xs September 30, 2016
           %span.visible-xs Sep 30, 2016
           %br
           Denver, CO
         %a{href: "#", class: 'white-link purchase-tickets'}
-          %span Purchase Tickets        
+          %span Purchase Tickets
 
 // SCHEDULE
 #schedule.block.block-schedule
@@ -54,7 +54,7 @@
     .inner
       .block-content
         %h3 Denver Art Museum
-        %p 
+        %p
           %a{href: "mailto:denverartmuseum.org", target: '_blank', class: 'gray-link'}
             denverartmuseum.org
         %address
@@ -89,13 +89,13 @@
       .block-content
         = form_tag "/contact", autocomplete: "off" do
           = invisible_captcha :topic
-          .js-float-label-wrapper            
+          .js-float-label-wrapper
             = text_field_tag "name", nil, placeholder: 'Name', required: true, minlength: 2
             = label_tag 'name', 'Name'
-          .js-float-label-wrapper            
+          .js-float-label-wrapper
             = text_field_tag "email", nil, placeholder: 'Email Address', type: 'email', required: true
             = label_tag 'name', 'Email Address'
-          .js-float-label-wrapper            
+          .js-float-label-wrapper
             = text_field_tag "comment", nil, placeholder: 'Comment or Question', required: true, minlength: 2
             = label_tag 'name', 'Comment or Question'
           .form-group.form-group-form-actions
@@ -104,7 +104,7 @@
                 %p#formResults
               .col-md-4.text-right
                 .btn-form-submit
-                  = submit_tag "Send", class: 'btn btn-link btn-submit', 'data-loading-text': "Sending..." 
+                  = submit_tag "Send", class: 'btn btn-link btn-submit', 'data-loading-text': "Sending..."
 
 #organizers.block.block-sponsors
   .container
