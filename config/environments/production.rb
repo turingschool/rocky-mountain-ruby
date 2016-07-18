@@ -83,7 +83,7 @@ Rails.application.configure do
     :port                 => 587,
     :domain               => 'turing.io',
     :user_name            => 'turing',
-    :password             => 'vau6wenk3ea',
+    :password             => '',
     :authentication       => "plain",
     :enable_starttls_auto => true
   }
