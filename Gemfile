@@ -10,6 +10,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'haml-rails'
 gem 'invisible_captcha'
 gem 'sendgrid'
+gem 'figaro'
 
 group :development, :test do
   gem 'byebug'
