@@ -81,7 +81,7 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     :address              => 'smtp.sendgrid.net',
     :port                 => 587,
-    :domain               => 'turing.io',
+    :domain               => 'rocky-mountain-ruby.herokuapp.com',
     :user_name            => 'turing',
     :password             => ENV['SENDGRID_PASSWORD'],
     :authentication       => 'plain',
