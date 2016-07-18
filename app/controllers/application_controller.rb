@@ -45,7 +45,7 @@ class ApplicationController < ActionController::Base
   end
 
   def contact
-    ContactMailer.form_request(params[:name], params[:email], params[:comment]).deliver
+    ContactMailer.form_request(params[:name], params[:email], params[:comment]).deliver_now
     render text: 'Message sent successfully. Thank you.', status: 200
   end
 end
