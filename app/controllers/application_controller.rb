@@ -6,17 +6,21 @@ class ApplicationController < ActionController::Base
 
   def index
   	@schedule = [
-  		{time: '8:00 am', length: '60 minutes', title: 'Registration, Coffee, Games/Demos'},
-  		{time: '9:00 am', length: '30 minutes', title: 'Registration, Coffee, Games/Demos'},
-  		{time: '10:30 am', length: '60 minutes', title: 'Registration, Coffee, Games/Demos'},
-  		{time: '11:00 am', length: '30 minutes', title: 'Registration, Coffee, Games/Demos'},
-  		{time: '11:15 am', length: '90 minutes', title: 'Registration, Coffee, Games/Demos'},
-  		{time: '12:00 pm', length: '45 minutes', title: 'Registration, Coffee, Games/Demos'},
-  		{time: '1:00 pm', length: '60 minutes', title: 'Registration, Coffee, Games/Demos'},
-  		{time: '1:45 pm', length: '90 minutes', title: 'Registration, Coffee, Games/Demos'},
-  		{time: '2:00 pm', length: '90 minutes', title: 'Registration, Coffee, Games/Demos'},
-  		{time: '2:30 pm', length: '60 minutes', title: 'Registration, Coffee, Games/Demos'},
-  		{time: '3:00 pm', length: '30 minutes', title: 'Registration, Coffee, Games/Demos'}
+  		{time: '9:00 am',  length: '60 minutes', title: 'Registration, Continental Breakfast, Games/Demos'},
+  		{time: '10:00 am', length: '5 minutes',  title: 'Opening/Kickoff'},
+  		{time: '10:05 am', length: '35 minutes', title: 'Dave Thomas (pragdave.me)'},
+  		{time: '10:45 am', length: '15 minutes', title: 'Community Spotlight: Jackie Ros (Revolar)'},
+  		{time: '11:05 am', length: '35 minutes', title: 'Erika Carlson (Detroit Labs)'},
+  		{time: '11:45 am', length: '35 minutes', title: 'Kinsey Ann Durham (GoSpotCheck)'},
+  		{time: '12:25 pm', length: '35 minutes', title: 'Ingrid Alongi (Cognizant Quick Left)'},
+  		{time: '1:00 pm',  length: '60 minutes', title: 'Lunch'},
+  		{time: '2:00 pm',  length: '5 minutes',  title: 'Reconvene'},
+  		{time: '2:05 pm',  length: '25 minutes', title: 'Sarah Allen (18F)'},
+  		{time: '2:35 pm',  length: '15 minutes', title: 'Community Spotlight: Wan-Lae Cheng (Skillful / Markle Foundation)'},
+      {time: '2:55 pm',  length: '35 minutes', title: 'Chad Fowler (Wunderlist / Microsoft)'},
+      {time: '3:35 pm',  length: '35 minutes', title: 'Saron Yitbarek (CodeNewbie)'},
+      {time: '4:15 pm',  length: '15 minutes', title: 'Thanks & Closing'},
+      {time: '4:30 pm',  length: '90 minutes', title: 'Happy Hour (Sharpe Lobby)'}
   	]
 
     @speakers = [
