@@ -1,5 +1,6 @@
 // NAV
-- @nav = ['Schedule', 'Locations', 'Speakers', 'Contact', 'Organizers']
+-# - @nav = ['Schedule', 'Locations', 'Speakers', 'Contact', 'Sponsors']
+- @nav = ['Locations', 'Speakers', 'Contact', 'Sponsors']
 %header.block.block-navigation
   .container
     %nav{class: 'navbar', id: 'navbar'}
@@ -24,25 +25,25 @@
           %span.visible-xs Sep 30, 2016
           %br
           Denver, CO
-        %a{href: "#", class: 'white-link purchase-tickets'}
+        %a{href: 'https://rockymtnruby2016.busyconf.com/bookings/new', class: 'white-link purchase-tickets'}
           %span Purchase Tickets
 
 // SCHEDULE
-#schedule.block.block-schedule
-  .container
-    .inner
-      %h2.block-title Schedule
-      .block-content
-        %h3.text-center Friday, September 30
-        %ul.events
-          - @schedule.each do |event, index|
-            %li{class: 'event ' + cycle("odd", "even")}
-              .row
-                .col-sm-3
-                  %span.event-time= event[:time]
-                  %span.event-length= event[:length]
-                .col-sm-9
-                  %span.event-title= event[:title]
+-# #schedule.block.block-schedule
+  -# .container
+    -# .inner
+      -# %h2.block-title Schedule
+      -# .block-content
+        -# %h3.text-center Friday, September 30
+        -# %ul.events
+          -# - @schedule.each do |event, index|
+            -# %li{class: 'event ' + cycle("odd", "even")}
+              -# .row
+                -# .col-sm-3
+                  -# %span.event-time= event[:time]
+                  -# %span.event-length= event[:length]
+                -# .col-sm-9
+                  -# %span.event-title= event[:title]
 // LOCATION
 #locations.block.block-location-title
   .container
@@ -55,15 +56,15 @@
       .block-content
         %h3 Denver Art Museum
         %p
-          %a{href: "mailto:denverartmuseum.org", target: '_blank', class: 'gray-link'}
+          %a{href: 'http://denverartmuseum.org', target: '_blank', class: 'gray-link'}
             denverartmuseum.org
         %address
-          %a{href: "#", target: '_blank', class: 'gray-link'}
+          %a{href: 'https://goo.gl/maps/5N7QNZYN3vN2', target: '_blank', class: 'gray-link'}
             100 W 14th Ave Pkwy, Denver, CO 80204
             %br
             Sharp Auditorium + Lobby
         %p
-          %a{href: "#", target: '_blank'}
+          %a{href: 'https://rockymtnruby2016.busyconf.com/bookings/new', target: '_blank'}
             %span Purchase Tickets
 
 #speakers.block.block-speakers
@@ -106,27 +107,28 @@
                 .btn-form-submit
                   = submit_tag "Send", class: 'btn btn-link btn-submit', 'data-loading-text': "Sending..."
 
-#organizers.block.block-sponsors
-  .container
-    .inner
-      %h2.block-title Sponsors
-      .block-content
-        .row
-          - @sponsors.each do |sponsor|
-            .col-sm-4
-              .sponsor{'data-mh': 'sponsor', class: cycle("text-left", "text-center", "text-right")}
-                = image_tag sponsor, class: 'img-responsive'
+-# #sponsors.block.block-sponsors
+-#   .container
+-#     .inner
+-#       %h2.block-title Sponsors
+-#       .block-content
+-#         .row
+-#           - @sponsors.each do |sponsor|
+-#             .col-sm-4
+-#               .sponsor{'data-mh': 'sponsor', class: cycle("text-left", "text-center", "text-right")}
+-#                 = image_tag sponsor, class: 'img-responsive'
 
-.block.block-vendors
-  .container
-    .inner
-      %h2.block-title Vendors
-      .block-content
-        .row
-          - @vendors.each do |vendor|
-            .col-sm-4
-              .vendor{'data-mh': 'vendor', class: cycle("text-left", "text-center", "text-right")}
-                = image_tag vendor, class: 'img-responsive'
+-# .block.block-vendors
+-#   .container
+-#     .inner
+-#       %h2.block-title Vendors
+-#       .block-content
+-#         .row
+-#           - @vendors.each do |vendor|
+-#             .col-sm-4
+-#               .vendor{'data-mh': 'vendor', class: cycle("text-left", "text-center", "text-right")}
+-#                 = image_tag vendor, class: 'img-responsive'
+
 .block.block-footer
   .container
     .block-content
