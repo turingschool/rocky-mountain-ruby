@@ -10,6 +10,7 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require panton-light/stylesheet.css
  */
 @import "partials/variables";
 @import "bootstrap-sprockets";
@@ -26,4 +27,4 @@
 @import "partials/blocks/sponsors";
 @import "partials/blocks/vendors";
 @import "partials/blocks/footer";
-@import "partials/blocks/contact"
+@import "partials/blocks/contact";

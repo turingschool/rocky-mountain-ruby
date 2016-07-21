@@ -2,6 +2,10 @@ body {
 	font-weight: 300;
 }
 
+h1 {
+	font-family: "pantonlight";
+}
+
 h2 {
 	color: #333333;
 }
@@ -16,13 +20,17 @@ h4 {
 	margin-top: 20px;
 }
 
+p {
+	font-weight: 400;
+}
+
 a {
 	&, &:visited, &:focus, &:active {
 		display: inline-block;
 		font-size: 16px;
 		letter-spacing: 1px;
 		text-decoration: none;
-		font-weight: 300;
+		font-weight: 400;
 		span {
 			padding-bottom: 6px;
 			border-bottom: 4px solid $brand-primary;
