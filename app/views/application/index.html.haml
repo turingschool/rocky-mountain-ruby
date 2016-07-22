@@ -6,14 +6,15 @@
     %nav{class: 'navbar', id: 'navbar'}
       %ul{class: 'nav navbar-nav'}
         %li
-          = image_tag 'logo-pink.png', class: 'logo-pink'
+          %a{href:'#home'}
+            = image_tag 'logo-pink.png', class: 'logo-pink'
         - @nav.each do |name|
           %li
             %a{href: "#" + name.downcase}
               %span= name
 
 // HERO
-.block.block-hero
+#home.block.block-hero
   .container
     .inner
       .block-content
@@ -25,7 +26,7 @@
           %span.visible-xs Sep 30, 2016
           %br
           Denver, CO
-        %a{href: 'https://rockymtnruby2016.busyconf.com/bookings/new', class: 'white-link purchase-tickets'}
+        %a{href: 'https://rockymtnruby2016.busyconf.com/bookings/new', target: '_blank', class: 'white-link purchase-tickets'}
           %span Purchase Tickets
 
 // SCHEDULE
