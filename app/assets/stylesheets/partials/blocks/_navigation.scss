@@ -30,14 +30,20 @@
 					height: 94px;
 					line-height: 94px;
 				}
-				a, a:visited, a:focus, a:active {
+				a, a:visited, a:focus, {
 					padding: 0px 20px;
 					font-weight: 400;
+          background-color: transparent;
 					span {
 						border-color: transparent;
 					}
 				}
-				a:hover {
+        a:active, a:hover, a:visited, a:focus {
+          span {
+            border-color: white;
+          }
+        }
+				a:hover, a:active {
 					background: transparent;
 					color: white;
 				}
