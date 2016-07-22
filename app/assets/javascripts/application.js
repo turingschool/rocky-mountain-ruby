@@ -20,9 +20,13 @@
 $(function() {
   $('[data-mh]').matchHeight();
 
-  $('body').scrollspy({
-  	target: '#navbar',
-  	offset: 20
+  $("#navbar ul li a[href^='#']").on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: $(this.hash).offset().top
+    }, 600, function(){
+      window.location.hash = this.hash;
+    });
   });
 
   //$('.js-float-label-wrapper').FloatLabel();
