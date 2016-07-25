@@ -68,10 +68,10 @@ class ApplicationController < ActionController::Base
       # {name: 'Chad Fowler'}
     ]
 
-    @sponsors = [
-      'sponsors/honeybadger.png',
-      'sponsors/ruby_app_care.png'
-    ]
+    @sponsors = {
+      'sponsors/honeybadger.png'   => 'http://honeybadger.io',
+      'sponsors/ruby_app_care.png' => 'http://rubyappcare.com'
+    }
 
     @vendors = [
       'vendor-default.jpg',
