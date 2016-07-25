@@ -83,8 +83,8 @@ class ApplicationController < ActionController::Base
     # @nav = ['Schedule', 'Locations', 'Speakers', 'Contact', 'Sponsors']
     @nav = ['Locations', 'Speakers', 'Contact']
 
-    # @sections = %w(nav hero schedule location schedule speakers contact sponsors vendors)
-    @sections = %w(nav hero schedule location speakers)
+    # @sections = %w(nav hero schedule location schedule speakers contact sponsors vendors footer)
+    @sections = %w(nav hero schedule location speakers contact footer)
   end
 
   def contact
