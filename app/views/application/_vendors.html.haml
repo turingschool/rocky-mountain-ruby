@@ -1,0 +1,10 @@
+-# .block.block-vendors
+-#   .container
+-#     .inner
+-#       %h2.block-title Vendors
+-#       .block-content
+-#         .row
+-#           - @vendors.each do |vendor|
+-#             .col-sm-4
+-#               .vendor{'data-mh': 'vendor', class: cycle("text-left", "text-center", "text-right")}
+-#                 = image_tag vendor, class: 'img-responsive'
