@@ -8,7 +8,7 @@
         .row
           - @speakers.each do |speaker|
             .col-md-4.col-sm-6.col-xs-12
-              .speaker{'data-mh': 'speaker'}
+              .speaker{:data => {'mh' => 'speaker'}}
                 .speaker-img
                   = image_tag speaker[:img], class: 'img-responsive'
                 .speaker-name
