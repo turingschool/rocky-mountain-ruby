@@ -68,11 +68,10 @@ class ApplicationController < ActionController::Base
       # {name: 'Chad Fowler'}
     ]
 
-    @sponsors = [
-      'sponsor-default.jpg',
-      'sponsor-default.jpg',
-      'sponsor-default.jpg'
-    ]
+    @sponsors = {
+      'sponsors/honeybadger.png' => 'http://honeybadger.io',
+      'sponsors/rubyappcare.png' => 'http://rubyappcare.com'
+    }
 
     @vendors = [
       'vendor-default.jpg',
@@ -81,10 +80,10 @@ class ApplicationController < ActionController::Base
     ]
 
     # @nav = ['Schedule', 'Locations', 'Speakers', 'Contact', 'Sponsors']
-    @nav = ['Locations', 'Speakers', 'Contact']
+    @nav = ['Locations', 'Speakers', 'Contact', 'Sponsors']
 
     # @sections = %w(nav hero schedule location schedule speakers contact sponsors vendors footer)
-    @sections = %w(nav hero schedule location speakers contact footer)
+    @sections = %w(nav hero schedule location speakers contact sponsors footer)
   end
 
   def contact
