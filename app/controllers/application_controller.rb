@@ -80,7 +80,7 @@ class ApplicationController < ActionController::Base
     ]
 
     # @nav = ['Schedule', 'Locations', 'Speakers', 'Contact', 'Sponsors']
-    @nav = ['Locations', 'Speakers', 'Contact', 'Sponsors']
+    @nav = ['Location', 'Speakers', 'Contact', 'Sponsors']
 
     # @sections = %w(nav hero schedule location schedule speakers contact sponsors vendors footer)
     @sections = %w(nav hero schedule location speakers contact sponsors footer)
