@@ -1,0 +1,10 @@
+%header.block.block-navigation
+  .container
+    %nav{class: 'navbar', id: 'navbar'}
+      %ul{class: 'nav navbar-nav'}
+        %li
+          = image_tag 'logo-pink.png', class: 'logo-pink'
+        - @nav.each do |name|
+          %li
+            %a{href: "#" + name.downcase}
+              %span= name

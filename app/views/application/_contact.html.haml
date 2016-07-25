@@ -1,0 +1,23 @@
+#contact.block.block-contact
+  .container
+    .inner
+      %h2.block-title Contact
+      .block-content
+        = form_tag "/contact", autocomplete: "off" do
+          = invisible_captcha :topic
+          .js-float-label-wrapper
+            = text_field_tag "name", nil, placeholder: 'Name', required: true, minlength: 2
+            = label_tag 'name', 'Name'
+          .js-float-label-wrapper
+            = text_field_tag "email", nil, placeholder: 'Email Address', type: 'email', required: true
+            = label_tag 'name', 'Email Address'
+          .js-float-label-wrapper
+            = text_field_tag "comment", nil, placeholder: 'Comment or Question', required: true, minlength: 2
+            = label_tag 'name', 'Comment or Question'
+          .form-group.form-group-form-actions
+            .row
+              .col-md-8
+                %p#formResults
+              .col-md-4.text-right
+                .btn-form-submit
+                  = submit_tag "Send", class: 'btn btn-link btn-submit', 'data-loading-text': "Sending..."

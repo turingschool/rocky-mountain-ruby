@@ -1,0 +1,18 @@
+#speakers.block.block-speakers
+  .container
+    .inner
+      %h2.block-title Speakers
+      .block-content
+        .row
+          - @speakers.each do |speaker|
+            .col-md-4.col-sm-6.col-xs-12
+              .speaker{:data => {'mh' => 'speaker'}}
+                .speaker-img
+                  = image_tag speaker[:img], class: 'img-responsive'
+                .speaker-name
+                  %h4= speaker[:name]
+                - if speaker[:subtitle]
+                  .speaker-subtitle
+                    %em= speaker[:subtitle]
+                .speaker-bio
+                  %p= speaker[:bio]
