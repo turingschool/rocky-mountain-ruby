@@ -7,17 +7,18 @@
 			margin-bottom: 25px;
 			.img-responsive {
 				display: inline-block;
+			}
+      .img-url {
         position: relative;
         top: 50%;
         transform: perspective(1px) translateY(-50%);
-			}
+      }
 			@media #{$xs} {
 				text-align: center !important;
-        .img-responsive {
-          display: inline-block;
-          margin-bottom: 25px;
+        .img-url {
           transform: perspective(0) translateY(0);
-
+          margin-top: 10px;
+          margin-bottom: 10px;
         }
 			}
 		}
