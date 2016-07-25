@@ -41,28 +41,28 @@ class ApplicationController < ActionController::Base
         bio: 'Can wearable IoT devices make us safer? Jackie founded Revolar to find out. She brings perspective and lessons learned from getting the product to market, accelerating the business through Techstars, and helping build the Denver community.',
         img: 'speakers/jackie-ros.jpg'},
 
-      { name: 'Announcing 7/1',
+      { name: 'Announcing 8/1',
         bio: 'Appreticeship is changing the software industry. She instructs one of the most successful apprenticeship programs, help people develop real-world skills, and builds the technical community in Detroit.',
         img: 'default-speaker.jpg'},
       # {name: 'Erika Carlson', bio: 'Erika Carlson was studying clinical psychology in 2011, when she wrote her first line of Python code. She fell in love with programming, decided to change paths, and is now a software developer and director of the Developer Apprentice Program at Detroit Labs. Erika is deeply passionate about creating a community of peers and mentors for women exploring the field of technology for the first time.', img: 'speakers/erika-carlson.jpg'},
 
-      { name: 'Announcing 7/1',
+      { name: 'Announcing 8/1',
         bio: 'Formerly an apprentice herself, she started a movement: the most supportive community of programmers and people learning to code. ',
         img: 'default-speaker.jpg'},
       # {name: Saron Yitbarek}
 
-      { name: 'Announcing 7/8',
+      { name: 'Announcing 8/8',
         subtitle: 'Community Spotlight',
         bio: 'Can we use data to fix the labor market? Across industries, there are many open jobs and many people under-employed or unemployed. We help great people get the training to start great careers.',
         img: 'default-speaker.jpg'},
       # {name: 'Skillful People'}
 
-      { name: 'Announcing 7/8',
+      { name: 'Announcing 8/8',
         bio: 'Experienced software engineer who co-founded RailsBridge, launched a startup, and now is working to fix government with 18F.',
         img: 'default-speaker.jpg'},
       # {name: 'Sarah Allen'}
 
-      { name: 'Announcing 7/8',
+      { name: 'Announcing 8/8',
         bio: "A long-time Ruby developer, community builder, and team leader - he's lived through Six-Sigma, a flagging unicorn startup, and finally small business success.",
         img: 'default-speaker.jpg'}
       # {name: 'Chad Fowler'}
