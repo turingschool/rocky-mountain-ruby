@@ -41,15 +41,16 @@ class ApplicationController < ActionController::Base
         bio: 'Can wearable IoT devices make us safer? Jackie founded Revolar to find out. She brings perspective and lessons learned from getting the product to market, accelerating the business through Techstars, and helping build the Denver community.',
         img: 'speakers/jackie-ros.jpg'},
 
-      { name: 'Announcing 8/1',
-        bio: 'Appreticeship is changing the software industry. She instructs one of the most successful apprenticeship programs, help people develop real-world skills, and builds the technical community in Detroit.',
-        img: 'default-speaker.jpg'},
-      # {name: 'Erika Carlson', bio: 'Erika Carlson was studying clinical psychology in 2011, when she wrote her first line of Python code. She fell in love with programming, decided to change paths, and is now a software developer and director of the Developer Apprentice Program at Detroit Labs. Erika is deeply passionate about creating a community of peers and mentors for women exploring the field of technology for the first time.', img: 'speakers/erika-carlson.jpg'},
+      # { name: 'Erika Carlson',
+      #   bio: 'Appreticeship is changing the software industry. She instructs one of the most successful apprenticeship programs, help people develop real-world skills, and builds the technical community in Detroit.',
+      #   img: 'default-speaker.jpg'},
+      { name: 'Erika Carlson',
+        bio: 'In 2011 Erika wrote her first line of Python. She fell in love with programming, decided to change paths, and is now a software developer and director of the Developer Apprentice Program at Detroit Labs. Erika is deeply passionate about creating a community of peers and mentors for women exploring the field of technology.',
+        img: 'speakers/erika-carlson.jpg'},
 
-      { name: 'Announcing 8/1',
-        bio: 'Formerly an apprentice herself, she started a movement: the most supportive community of programmers and people learning to code. ',
-        img: 'default-speaker.jpg'},
-      # {name: Saron Yitbarek}
+      { name: 'Saron Yitbarek',
+        bio: 'Formerly an apprentice herself, she started the CodeNewbie movement: the most supportive community of programmers and people learning to code. Saron will bring her perspective to share ideas for learners and coaches.',
+        img: 'speakers/saron-yitbarek.jpg'},
 
       { name: 'Announcing 8/8',
         subtitle: 'Community Spotlight',
