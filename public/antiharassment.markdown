@@ -1,6 +1,6 @@
 # Anti-Harassment Policy
 
-**Rocky Mountain Ruby is dedicated to providing a harassment-free conference experience for everyone regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age or religion.**
+**Rocky Mountain Ruby is dedicated to providing a harassment-free conference experience for everyone regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, religion, or national origin.**
 
 We do not tolerate harassment of conference participants in any form. For example, sexual language and imagery are not appropriate for any conference venue, including talks. Conference participants violating these rules may be sanctioned or expelled from the conference at the discretion of the conference organizers.
 
@@ -8,7 +8,7 @@ We do not tolerate harassment of conference participants in any form. For exampl
 
 Harassment includes, but is not limited to:
 
-* Verbal comments that reinforce social structures of domination related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, or religion.
+* Verbal comments that reinforce social structures of domination related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, religion, or national origin.
 * Sexual or sexualized images in public spaces
 * Deliberate intimidation, stalking, or following
 * Unwanted photography or recording
