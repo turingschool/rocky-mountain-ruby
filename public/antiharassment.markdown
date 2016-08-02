@@ -8,7 +8,7 @@ We do not tolerate harassment of conference participants in any form. For exampl
 
 Harassment includes, but is not limited to:
 
-* Verbal comments that reinforce social structures of domination related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, religion, or national origin.
+* Verbal comments that reinforce social structures of domination related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, religion, or national origin
 * Sexual or sexualized images in public spaces
 * Deliberate intimidation, stalking, or following
 * Unwanted photography or recording
@@ -55,9 +55,9 @@ In the event of any questions or problems please contact:
 * Email: contact@rockymtnruby.com
 * Twitter: [@rockymtnruby](https://twitter.com/rockymtnruby)
 * Phone/Text: [TODO: conference organizer phone]
-* Denver Art Museum: 720-865-5000
+* Denver Art Museum: (720) 865-5000
 * Denver Police: (720) 913-2000
-* [Denver Sexual Assault Hotline](http://thebluebench.org/): 303-322-7273
+* [Denver Sexual Assault Hotline](http://thebluebench.org/): (303) 322-7273
 
 #### Credits
 
