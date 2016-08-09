@@ -13,7 +13,8 @@ While there is certainly an intangible component of what makes a great Guide, th
 
 Some examples of folks who would make fantastic Guides are: Rocky Mountain Ruby speakers, folks who are attending their second or third Ruby conference (meaning that you remember what it's like to be new!), Hallway Track Superstars, and former RubyConf or RailsConf Opportunity Scholars. But even if you don't fit in one of those categories, you may still be a great fit -- apply anyway and tell us why you'd be a great community ambassador!
 
-[Apply to be a guide today!](https://docs.google.com/a/turbovote.org/forms/d/e/1FAIpQLSfYE0NrfPMVa7IaDHRff2x9A3Fb3O1OQ8pRFxiPkjpwvNl_-A/viewform?c=0&w=1).
+[Apply to be a guide
+today!](https://docs.google.com/a/turbovote.org/forms/d/e/1FAIpQLSfYE0NrfPMVa7IaDHRff2x9A3Fb3O1OQ8pRFxiPkjpwvNl_-A/viewform?c=0&w=1)
 
 *Please note: Guides are responsible for buying their own tickets to Rocky Mountain Ruby. We regret that we are unable to offer discounted or free tickets to our Guides.*
 
@@ -30,6 +31,7 @@ Here are some things that are included in the Scholarship program in addition to
 
 *Please note: We regret that we are unable to provide transportation or accommodation support for Scholars. We do recognize that this may place an additional burden on Scholars traveling to the conference from outside of the region and will do our best to provide non-financial assistance in making travel and accommodation arrangements.*
 
-What are you waiting for? [Apply today!](https://docs.google.com/a/turbovote.org/forms/d/e/1FAIpQLSe03wH1CnuXAYG1WqDMXndfyvradmn8mc-9-e_WN2fqV9jdiw/viewform?c=0&w=1).
+What are you waiting for? [Apply
+today!](https://docs.google.com/a/turbovote.org/forms/d/e/1FAIpQLSe03wH1CnuXAYG1WqDMXndfyvradmn8mc-9-e_WN2fqV9jdiw/viewform?c=0&w=1)
 
-Scholarship applications will be accepted until Friday, August 26 at 11:59 pm MDT.
+Scholarship applications will be reviewd on a rolling basis until Friday, August 26 at 11:59 pm MDT.
