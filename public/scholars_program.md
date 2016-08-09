@@ -1,4 +1,4 @@
-## Be a Rocky Mountain Ruby 2016 Guide
+# Be a Rocky Mountain Ruby 2016 Guide
 
 Want to help bring a new community member into the Ruby community? We're looking for volunteer Guides to partner up with this year's Opportunity Scholars.
 
@@ -12,6 +12,8 @@ While there is certainly an intangible component of what makes a great Guide, th
 * Guides should be able to give feedback on breaking into the Ruby world, especially for Scholars looking for their first Ruby or Rails gig!
 
 Some examples of folks who would make fantastic Guides are: Rocky Mountain Ruby speakers, folks who are attending their second or third Ruby conference (meaning that you remember what it's like to be new!), Hallway Track Superstars, and former RubyConf or RailsConf Opportunity Scholars. But even if you don't fit in one of those categories, you may still be a great fit -- apply anyway and tell us why you'd be a great community ambassador!
+
+Guides can register [here](https://docs.google.com/a/casimircreative.com/forms/d/1w0tmzYoaIaFgw5EKNJwAJt8X1hWpvUlc3Bakb-RxoK0/edit).
 
 *Please note: Guides are responsible for buying their own tickets to Rocky Mountain Ruby. We regret that we are unable to offer discounted or free tickets to our Guides.*
 
@@ -32,4 +34,4 @@ What are you waiting for?
 
 Scholarship applications will be accepted until Friday, August 26 at 11:59 pm MDT.
 
-You can register [here](https://docs.google.com/a/casimircreative.com/forms/d/1w0tmzYoaIaFgw5EKNJwAJt8X1hWpvUlc3Bakb-RxoK0/edit).
+Scholars can register [here](https://docs.google.com/a/casimircreative.com/forms/d/1w0tmzYoaIaFgw5EKNJwAJt8X1hWpvUlc3Bakb-RxoK0/edit).
