@@ -59,7 +59,7 @@ class ApplicationController < ActionController::Base
         img: 'speakers/sarah-allen.jpg'},
 
       { name: 'Chad Fowler',
-        bio: "A long-time Ruby developer, community builder, and team leader - Chard has lived through Six-Sigma, a flagging unicorn startup, and finally small business success.",
+        bio: "A long-time Ruby developer, community builder, and team leader - Chad has lived through Six-Sigma, a flagging unicorn startup, and finally small business success.",
         img: 'speakers/chad-fowler.jpg'}
     ]
 
