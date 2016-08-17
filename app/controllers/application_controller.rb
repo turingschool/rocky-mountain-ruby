@@ -16,11 +16,11 @@ class ApplicationController < ActionController::Base
   		{time: '1:00 pm',  length: '60 minutes', title: 'Lunch'},
   		{time: '2:00 pm',  length: '5 minutes',  title: 'Reconvene'},
   		{time: '2:05 pm',  length: '25 minutes', title: 'Sarah Allen (18F)'},
-  		{time: '2:35 pm',  length: '15 minutes', title: 'Community Spotlight: Wan-Lae Cheng (Skillful / Markle Foundation)'},
+  		{time: '2:35 pm',  length: '15 minutes', title: 'Community Spotlight: Andi Rugg (Skillful / Markle Foundation)'},
       {time: '2:55 pm',  length: '35 minutes', title: 'Chad Fowler (Wunderlist / Microsoft)'},
       {time: '3:35 pm',  length: '35 minutes', title: 'Saron Yitbarek (CodeNewbie)'},
       {time: '4:15 pm',  length: '15 minutes', title: 'Thanks & Closing'},
-      {time: '4:30 pm',  length: '90 minutes', title: 'Happy Hour (Sharpe Lobby)'}
+      {time: '4:30 pm',  length: '90 minutes', title: 'Social Hour (Sharpe Lobby)'}
   	]
 
     @speakers = [
@@ -75,10 +75,10 @@ class ApplicationController < ActionController::Base
     ]
 
     # @nav = ['Schedule', 'Locations', 'Speakers', 'Contact', 'Sponsors']
-    @nav = ['Location', 'Speakers', 'Contact', 'Sponsors']
+    @nav = ['Location', 'Speakers', 'Schedule', 'Contact', 'Sponsors']
 
     # @sections = %w(nav hero schedule location schedule speakers contact sponsors vendors footer)
-    @sections = %w(nav hero schedule location speakers contact sponsors footer)
+    @sections = %w(nav hero location speakers schedule contact sponsors footer)
   end
 
   def contact
