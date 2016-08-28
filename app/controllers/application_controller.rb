@@ -68,17 +68,15 @@ class ApplicationController < ActionController::Base
       'sponsors/rubyappcare.png' => 'http://rubyappcare.com'
     }
 
-    @vendors = [
-      'vendor-default.jpg',
-      'vendor-default.jpg',
-      'vendor-default.jpg'
-    ]
+    @media_sponsors = {
+      'sponsors/rubygarage.png'  => 'https://rubygarage.org'
+    }
 
     # @nav = ['Schedule', 'Locations', 'Speakers', 'Contact', 'Sponsors']
     @nav = ['Location', 'Speakers', 'Schedule', 'Contact', 'Sponsors']
 
-    # @sections = %w(nav hero schedule location schedule speakers contact sponsors vendors footer)
-    @sections = %w(nav hero location speakers schedule contact sponsors footer)
+    # @sections = %w(nav hero schedule location schedule speakers contact sponsors media_sponsors footer)
+    @sections = %w(nav hero location speakers schedule contact sponsors media_sponsors footer)
   end
 
   def contact
