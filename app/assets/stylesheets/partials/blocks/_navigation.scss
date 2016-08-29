@@ -53,6 +53,7 @@
 				a:visited {
 					padding: 0 20px;
 					font-weight: 400;
+					background-color: transparent;
 
 					span {
 						border-color: transparent;
@@ -62,17 +63,41 @@
 					}
 				}
 
-				a:hover {
-					background: transparent;
-					color: white;
-				}
-
 				&.active {
 					a,
 					a:active,
 					a:focus,
+					a:hover,
 					a:visited {
-						@extend .white-link;
+						span {
+							border-color: white;
+						}
+					}
+				}
+
+				a:hover {
+					a:active,
+					a:focus,
+					a:hover,
+					a:visited {
+						span {
+							border-color: white;
+						}
+					}
+
+					a:active,
+					a:hover {
+						background: transparent;
+						color: white;
+					}
+
+					&.active {
+						a,
+						a:active,
+						a:focus,
+						a:visited {
+							@extend .white-link;
+						}
 					}
 				}
 			}

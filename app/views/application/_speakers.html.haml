@@ -1,0 +1,22 @@
+#speakers.block.block-speakers
+  .container
+    .inner
+      %h2.block-title Speakers
+      %div.overview-container
+        %span
+          We will feature seven sessions on development technologies and two community spotlights on important applications of those technologies.
+      .block-content
+        .row
+          - @speakers.each do |speaker|
+            .col-md-4.col-sm-6.col-xs-12
+              .speaker{data: {'mh' => 'speaker'}}
+                .speaker-img
+                  = image_tag speaker[:img], class: 'img-responsive'
+                .speaker-name
+                  %h4= speaker[:name]
+                .speaker-bio
+                  %p= speaker[:bio]
+                - if speaker[:twitter]
+                  .speaker-social
+                    %a{href: speaker[:twitter], target: "_blank"}
+                      = image_tag('twitter.png', size: "24x20")

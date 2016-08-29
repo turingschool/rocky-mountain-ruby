@@ -1,20 +1,31 @@
 !!!
 %html
   %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
-    %meta{:content => "width=device-width,initial-scale=1.0", "name" => "viewport"}
+
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %meta{content: "width=device-width,initial-scale=1.0", name: "viewport"}
     %title Rocky Mountain Ruby
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
     = javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js'
     = javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js'
     = csrf_meta_tags
+
+    %meta{content: "http://rockymtnruby.com/", property: "og:url"}
+    %meta{content: "Rocky Mountain Ruby 2016", property: "og:title"}
+    %meta{content: "Rocky Mountain Ruby is back for the seventh year, bringing together 250 developers in downtown Denver. Attendees will hear from nine industry leaders as we share practices and build our community.", property: "og:description"}
+    %meta{content: "Rocky Mountain Ruby", property: "og:site_name"}
+    %meta{content: "http://rockymtnruby.com/small-denver.jpg", property: "og:image"}
+    %meta{content: "100", property: "og:image:width"}
+    %meta{content: "52", property: "og:image:height"}
+
+    = render 'layouts/facebook'
   %body
     -@nav = [{title: 'Schedule', href: '/#schedule'},
       {title: 'Location', href: '/#location'},
       {title: 'Speakers', href: '/#speakers'},
       {title: 'Contact', href: '/#contact'},
-      {title: 'Organizers', href: '/#organizers'},
+      {title: 'Organizers', href: '/#sponsors'},
       {title: 'Anti-Harrasment Policy', href: '/policy'},
       {title: 'Scholars Program', href: '/scholars-program'}]
     %header.block.block-navigation

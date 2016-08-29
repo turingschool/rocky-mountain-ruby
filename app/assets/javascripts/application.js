@@ -20,14 +20,12 @@
 $(function() {
     $('[data-mh]').matchHeight();
 
-    //$('.js-float-label-wrapper').FloatLabel();
 
     $('.toggle-nav').click(function(e) {
         e.preventDefault();
         $('nav.navbar').toggleClass('open');
     });
 
-    console.log(window.location.pathname);
 
     // Find all anchors
     if (window.location.pathname == '/') {
@@ -40,7 +38,19 @@ $(function() {
                 href = href.replace('/', '');
                 // update anchors HREF with new one
                 $a.attr('href', href);
+
+                $(a).on('click', function(e) {
+                    e.preventDefault();
+                    var _this = $(this);
+                    console.log(_this.attr('href'));
+                    $('html, body').animate({
+                        scrollTop: $(_this.attr('href')).offset().top
+                    }, 600, function() {
+                        window.location.hash = _this.attr('href');
+                    });
+                });
             }
+
             setTimeout(function() {
                 $('body').scrollspy({
                     target: '#navbar',

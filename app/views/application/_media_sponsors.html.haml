@@ -1,0 +1,10 @@
+.block.block-media-sponsors
+  .container
+    .inner
+      %h2.block-title Media Sponsors
+      .block-content
+        .row
+          - @media_sponsors.each do |media_sponsor_img, media_sponsor_url|
+            .col-sm-4
+              .media-sponsor{'data-mh': 'media-sponsor', class: cycle("text-left", "text-center", "text-right")}
+                = link_to (image_tag media_sponsor_img, class: 'img-responsive'), media_sponsor_url, class: 'img-url'

@@ -1,13 +1,13 @@
 # Rocky Mountain Ruby
 
-This is a online website for the Rocky Mountain Ruby event. The application is built using Rails.
+This is a online website for the [Rocky Mountain Ruby](http://rockymtnruby.com) conference. The application is built using Rails.
 
 ### Installation
 
 Clone the repo using the following command:
 
 ```
-git clone https://github.com/smonetti/rocky-mountain-ruby.git
+git clone https://github.com/turingschool/rocky-mountain-ruby.git
 ```
 
 Install the gems by running:

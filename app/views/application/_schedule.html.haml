@@ -1,0 +1,15 @@
+#schedule.block.block-schedule
+  .container
+    .inner
+      %h2.block-title Schedule
+      .block-content
+        %h3.text-center Friday, September 30
+        %ul.events
+          - @schedule.each do |event, index|
+            %li{class: 'event ' + cycle("odd", "even")}
+              .row
+                .col-sm-3
+                  %span.event-time= event[:time]
+                  %span.event-length= event[:length]
+                .col-sm-9
+                  %span.event-title= event[:title]
