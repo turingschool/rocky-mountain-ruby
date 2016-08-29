@@ -1,0 +1,16 @@
+.banner-scholar-program {
+    background: {
+        position: bottom center;
+        repeat: no-repeat;
+        color: white;
+        size: cover;
+        image: asset-url('banner-scholar-program.jpg');
+    }
+    height: 770px;
+    @media #{$sm} {
+        height: 550px;
+    }
+    @media #{$xs} {
+        height: 400px;
+    }
+}
