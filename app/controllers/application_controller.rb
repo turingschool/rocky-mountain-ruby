@@ -25,31 +25,41 @@ class ApplicationController < ActionController::Base
 
     @speakers = [
       { name: 'Ingrid Alongi',
-        bio: 'Ingrid is a software engineer with experience in both interactive agencies and venture-funded start ups. She founded Quick Left, a software development company, which was acquired by Cognizant in 2016. With deep roots in the Colorodo technology community and many years experience as both a developer and leader, Ingrid is always interested in exploring the intersection of technology and human connection.',
+        bio: 'Ingrid is a software engineer and founder of Quick Left, a software development company, which was acquired by Cognizant in 2016. With deep roots in the Colorodo technology community and many years experience as both a developer and leader, Ingrid is always interested in exploring the intersection of technology and human connection.',
         img: 'speakers/ingrid-alongi.jpg',
-        twitter: 'http://www.google.com'},
+        twitter: 'https://twitter.com/electromute'
+      },
 
       { name: 'Dave Thomas',
-        bio: 'Dave opened Ruby to the English-speaking world with his book "Programming Ruby" and changed thousands of careers with "The Pragmatic Programmer". From there, he co-founded The Pragmatic Bookshelf publishing company which has gone on to publish the top-choice books for dozens of technologies. Dave has spent hundreds of hours coaching other developers in the classroom and on the job.',
+        bio: 'Dave opened Ruby to the English-speaking world with his book "Programming Ruby" and changed thousands of careers with "The Pragmatic Programmer". From there, he co-founded The Pragmatic Bookshelf publishing company which has gone on to publish the top-choice books for dozens of technologies.',
         img: 'speakers/dave-thomas.jpg',
-        twitter: 'http://www.google.com'},
+        twitter: 'https://twitter.com/pragdave'
+      },
 
       { name: 'Kinsey Ann Durham',
         bio: 'Kinsey is a software engineer at GoSpotCheck here in Denver. She is the co-founder of Kubmo, a non-profit dedicated to building and teaching technology curriculum to young women around the world. She is the chair of the BridgeFoundry board and organizes the Scholars and Guides Programs for Ruby Central conferences.',
-        img: 'speakers/kinsey-ann-durham.jpg'},
+        img: 'speakers/kinsey-ann-durham.jpg',
+        twitter: 'https://twitter.com/KinseyAnnDurham'
+      },
 
       { name: 'Jackie Ros',
         subtitle: 'Community Spotlight',
         bio: 'Can wearable IoT devices make us safer? Jackie founded Revolar to find out. She brings perspective and lessons learned from getting the product to market, accelerating the business through Techstars, and helping build the Denver community.',
-        img: 'speakers/jackie-ros.jpg'},
+        img: 'speakers/jackie-ros.jpg',
+        twitter: 'https://twitter.com/jackie_ros'
+      },
 
       { name: 'Erika Carlson',
         bio: 'In 2011 Erika wrote her first line of Python. She fell in love with programming, decided to change paths, and is now a software developer and director of the Developer Apprentice Program at Detroit Labs. Erika is deeply passionate about creating a community of peers and mentors for women exploring the field of technology.',
-        img: 'speakers/erika-carlson.jpg'},
+        img: 'speakers/erika-carlson.jpg',
+        twitter: 'https://twitter.com/eacarlson'
+      },
 
       { name: 'Saron Yitbarek',
         bio: 'Formerly an apprentice herself, she started the CodeNewbie movement: the most supportive community of programmers and people learning to code. Saron will bring her perspective to share ideas for learners and coaches.',
-        img: 'speakers/saron-yitbarek.jpg'},
+        img: 'speakers/saron-yitbarek.jpg',
+        twitter: 'https://twitter.com/saronyitbarek'
+      },
 
       { name: 'Andi Rugg',
         subtitle: 'Community Spotlight',
@@ -57,12 +67,16 @@ class ApplicationController < ActionController::Base
         img: 'speakers/andi-rugg.jpg'},
 
       { name: 'Sarah Allen',
-        bio: 'Experienced software engineer who co-founded RailsBridge, launched a startup, and now Sarah is working to fix government with 18F.',
-        img: 'speakers/sarah-allen.jpg'},
+        bio: 'Sarah Allen is a serial innovator with a history of developing leading-edge products, such as After Effects, Shockwave, Flash video, and OpenLaszlo. She co-founded RailsBridge, launched a startup, and now is working to fix government with 18F.',
+        img: 'speakers/sarah-allen.jpg',
+        twitter: 'https://twitter.com/ultrasaurus'
+      },
 
       { name: 'Chad Fowler',
-        bio: "A long-time Ruby developer, community builder, and team leader - Chad has lived through Six-Sigma, a flagging unicorn startup, and finally small business success.",
-        img: 'speakers/chad-fowler.jpg'}
+        bio: 'Chad is a long-time Ruby developer, community builder, and team leader. He started and co-organized a couple of Ruby-related conferences including The International Ruby Conference and RailsConf. Chad has lived through Six-Sigma, a flagging unicorn startup, and finally small business success.',
+        img: 'speakers/chad-fowler.jpg',
+        twitter: 'https://twitter.com/chadfowler'
+      }
     ]
 
     @sponsors = {
@@ -74,7 +88,7 @@ class ApplicationController < ActionController::Base
       'sponsors/rubygarage.png'  => 'https://rubygarage.org'
     }
 
-    @sections = %w(hero schedule location speakers contact sponsors media_sponsors)
+    @sections = %w(hero location speakers schedule contact sponsors media_sponsors)
   end
 
   def scholars_program
