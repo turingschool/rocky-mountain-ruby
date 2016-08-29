@@ -1,9 +1,9 @@
 !!!
 %html
   %head
+
     %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
     %meta{content: "width=device-width,initial-scale=1.0", name: "viewport"}
-
     %title Rocky Mountain Ruby
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
@@ -21,4 +21,36 @@
 
     = render 'layouts/facebook'
   %body
+    -@nav = [{title: 'Schedule', href: '/#schedule'},
+      {title: 'Location', href: '/#location'},
+      {title: 'Speakers', href: '/#speakers'},
+      {title: 'Contact', href: '/#contact'},
+      {title: 'Organizers', href: '/#sponsors'},
+      {title: 'Anti-Harrasment Policy', href: '/policy'},
+      {title: 'Scholars Program', href: '/scholars-program'}]
+    %header.block.block-navigation
+      .container
+        %a{href: "#", id: 'toggle-nav', class: 'toggle-nav visible-xs visible-sm'}
+          = image_tag 'logo-pink.png', class: 'logo-pink'
+          Menu
+        %nav{class: 'navbar', id: 'navbar'}
+          %ul{class: 'nav navbar-nav'}
+            %li.logo
+              = image_tag 'logo-pink.png', class: 'toggle-nav logo-pink hidden-xs hidden-sm', size: '30x20'
+              = image_tag 'close.png', class: 'toggle-nav logo-pink visible-xs visible-sm', size: '20x20'
+            - @nav.each do |item|
+              - if (@active_path == item[:href])
+                %li.active
+                  %a{href: item[:href]}
+                    %span= item[:title]
+              - else
+                %li
+                  %a{href: item[:href]}
+                    %span= item[:title]
     = yield
+
+    .block.block-footer
+      .container
+        .block-content
+          = image_tag 'logo-pink.png', class: 'logo-pink pull-left'
+          %span Copyright © Rocky Mountain Ruby 2016. All Rights Reserved

@@ -16,3 +16,7 @@
                   %h4= speaker[:name]
                 .speaker-bio
                   %p= speaker[:bio]
+                - if speaker[:twitter]
+                  .speaker-social
+                    %a{href: speaker[:twitter], target: "_blank"}
+                      = image_tag('twitter.png', size: "24x20")

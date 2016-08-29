@@ -20,34 +20,43 @@ h4 {
 	margin-top: 20px;
 }
 
-p {
+p,
+ul {
 	font-weight: 400;
 }
 
 a {
-	&, &:visited, &:focus, &:active {
+	&,
+	&:active,
+	&:focus,
+	&:visited {
 		display: inline-block;
 		font-size: 16px;
 		letter-spacing: 1px;
 		text-decoration: none;
 		font-weight: 400;
+
 		span {
 			padding-bottom: 6px;
 			border-bottom: 4px solid $brand-primary;
 		}
 	}
+
 	&:hover {
 		text-decoration: none;
 	}
 
 	&.white-link {
 		color: white;
+
 		span {
-			border-color: white;	
+			border-color: white;
 		}
 	}
+
 	&.gray-link {
 		color: $text-color;
+
 		&:hover {
 			text-decoration: underline;
 		}

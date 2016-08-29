@@ -1,9 +1,18 @@
 .block-footer {
-	margin-top: 20px;
+	margin-top: 40px;
+
+	.container {
+		.block-content {
+			border-top: 2px solid #CECECE;
+			padding-top: 30px;
+		}
+	}
+
 	.logo-pink {
 		@include size(30px, 20px);
 		margin-right: 5px;
 	}
+
 	span {
 		display: block;
 		margin-left: 45px;

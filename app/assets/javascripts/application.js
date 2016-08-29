@@ -18,31 +18,61 @@
 //= require_tree .
 
 $(function() {
-  $('[data-mh]').matchHeight();
+    $('[data-mh]').matchHeight();
 
-  $("#navbar ul li a[href^='#']").on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({
-      scrollTop: $(this.hash).offset().top
-    }, 600, function(){
-      window.location.hash = this.hash;
+
+    $('.toggle-nav').click(function(e) {
+        e.preventDefault();
+        $('nav.navbar').toggleClass('open');
     });
-  });
 
-  //$('.js-float-label-wrapper').FloatLabel();
 
-  $('form').validate();
+    // Find all anchors
+    if (window.location.pathname == '/') {
+        $('#navbar').find('a[href]').each(function(i, a) {
+            var $a = $(a);
+            var href = $a.attr('href');
+            // check is anchor href starts with page's URI
+            if (href.indexOf('/#') == 0) {
+                // remove URI from href
+                href = href.replace('/', '');
+                // update anchors HREF with new one
+                $a.attr('href', href);
 
-  var $btn = $('form .btn-submit');
+                $(a).on('click', function(e) {
+                    e.preventDefault();
+                    var _this = $(this);
+                    console.log(_this.attr('href'));
+                    $('html, body').animate({
+                        scrollTop: $(_this.attr('href')).offset().top
+                    }, 600, function() {
+                        window.location.hash = _this.attr('href');
+                    });
+                });
+            }
 
-  $('form').ajaxForm({
-    target: '#formResults',
-    resetForm: true,
-    beforeSubmit: function() {
-		$btn.button('loading');
-    },
-    success: function() {
-    	$btn.button('reset');
+            setTimeout(function() {
+                $('body').scrollspy({
+                    target: '#navbar',
+                    offset: 20
+                });
+            }, 500);
+        });
     }
-  });
+
+
+    $('form').validate();
+
+    var $btn = $('form .btn-submit');
+
+    $('form').ajaxForm({
+        target: '#formResults',
+        resetForm: true,
+        beforeSubmit: function() {
+            $btn.button('loading');
+        },
+        success: function() {
+            $btn.button('reset');
+        }
+    });
 });

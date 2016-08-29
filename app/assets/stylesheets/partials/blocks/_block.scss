@@ -8,5 +8,20 @@
 			font-size: 43px;
 		}
 	}
+
+	p.mini {
+		padding-left: 500px;
+		margin-bottom: 50px;
+		font-size: 16px;
+		@media #{$md} {
+			padding-left: 300px;
+		}
+		@media #{$sm} {
+			padding-left: 200px;
+		}
+		@media #{$xs} {
+			padding-left: 0;
+		}
+	}
 	margin-bottom: 55px;
 }

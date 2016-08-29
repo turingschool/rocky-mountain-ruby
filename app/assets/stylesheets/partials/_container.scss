@@ -1,7 +1,11 @@
 .container {
 	.inner {
 		@media #{$lg} {
-			padding: 0px 85px;
+			padding: 0 85px;
 		}
+	}
+
+	&.container-pad-menu {
+		padding-top: 150px;
 	}
 }
