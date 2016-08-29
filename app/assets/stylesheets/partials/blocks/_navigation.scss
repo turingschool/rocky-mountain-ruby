@@ -5,48 +5,114 @@
 	right: 0;
 	background: darken($brand-primary, 50%);
 	z-index: 10;
-	@media #{$xs} {
-		display: none;
+	height: 94px;
+
+	#toggle-nav {
+		display: inline-block;
+
+		& {
+			width: auto;
+			height: 94px;
+			line-height: 94px;
+		}
+
+		img {
+			@include size(30px, 20px);
+			margin-right: 5px;
+		}
 	}
+
 	nav.navbar {
 		min-height: auto;
-		border: 0px;
-		margin: 0px;
+		border: 0;
+		margin: 0;
+
 		ul {
-			padding: 0px;
-			margin: 0px;
+			padding: 0;
+			margin: 0;
 			float: none;
+
 			li {
 				float: none;
 				list-style: none;
-				.logo-pink {
-					@include size(30px, 20px);
-				}
+
 				&:first-child {
 					margin-right: 31px;
 				}
-				&, a {
+
+				&,
+				a {
 					display: inline-block;
 					height: 94px;
 					line-height: 94px;
 				}
-				a, a:visited, a:focus, a:active {
-					padding: 0px 20px;
+
+				a,
+				a:active,
+				a:focus,
+				a:visited {
+					padding: 0 20px;
 					font-weight: 400;
+
 					span {
 						border-color: transparent;
 					}
+					@media #{$md} {
+						padding: 0 11px;
+					}
 				}
+
 				a:hover {
 					background: transparent;
 					color: white;
 				}
+
 				&.active {
-					a, a:visited, a:focus, a:active {
+					a,
+					a:active,
+					a:focus,
+					a:visited {
 						@extend .white-link;
 					}
 				}
 			}
 		}
-	}	
+		@media #{$xs}, #{$sm} {
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			background: darken($brand-primary, 50%);
+			padding: 15px;
+			border-radius: 0;
+			display: none;
+
+			&.open {
+				display: block;
+			}
+
+			ul {
+				li {
+					display: block;
+					width: 100%;
+					text-align: left;
+					padding-left: 40px;
+					height: 50px;
+					line-height: 50px;
+
+					&.logo {
+						padding-left: 0;
+						margin-bottom: 15px;
+					}
+
+					a {
+						display: block;
+						height: 50px;
+						line-height: 50px;
+					}
+				}
+			}
+		}
+	}
 }

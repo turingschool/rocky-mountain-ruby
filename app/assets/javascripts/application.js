@@ -18,27 +18,51 @@
 //= require_tree .
 
 $(function() {
-  $('[data-mh]').matchHeight();
+    $('[data-mh]').matchHeight();
 
-  $('body').scrollspy({
-  	target: '#navbar',
-  	offset: 20
-  });
+    //$('.js-float-label-wrapper').FloatLabel();
 
-  //$('.js-float-label-wrapper').FloatLabel();
+    $('.toggle-nav').click(function(e) {
+        e.preventDefault();
+        $('nav.navbar').toggleClass('open');
+    });
 
-  $('form').validate();
+    console.log(window.location.pathname);
 
-  var $btn = $('form .btn-submit');
-
-  $('form').ajaxForm({
-    target: '#formResults',
-    resetForm: true,
-    beforeSubmit: function() {
-		$btn.button('loading');
-    },
-    success: function() {
-    	$btn.button('reset');
+    // Find all anchors
+    if (window.location.pathname == '/') {
+        $('#navbar').find('a[href]').each(function(i, a) {
+            var $a = $(a);
+            var href = $a.attr('href');
+            // check is anchor href starts with page's URI
+            if (href.indexOf('/#') == 0) {
+                // remove URI from href
+                href = href.replace('/', '');
+                // update anchors HREF with new one
+                $a.attr('href', href);
+            }
+            setTimeout(function() {
+                $('body').scrollspy({
+                    target: '#navbar',
+                    offset: 20
+                });
+            }, 500);
+        });
     }
-  });
+
+
+    $('form').validate();
+
+    var $btn = $('form .btn-submit');
+
+    $('form').ajaxForm({
+        target: '#formResults',
+        resetForm: true,
+        beforeSubmit: function() {
+            $btn.button('loading');
+        },
+        success: function() {
+            $btn.button('reset');
+        }
+    });
 });

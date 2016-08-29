@@ -1,17 +1,3 @@
-// NAV
--# - @nav = ['Schedule', 'Locations', 'Speakers', 'Contact', 'Sponsors']
-- @nav = ['Locations', 'Speakers', 'Contact', 'Sponsors']
-%header.block.block-navigation
-  .container
-    %nav{class: 'navbar', id: 'navbar'}
-      %ul{class: 'nav navbar-nav'}
-        %li
-          = image_tag 'logo-pink.png', class: 'logo-pink'
-        - @nav.each do |name|
-          %li
-            %a{href: "#" + name.downcase}
-              %span= name
-
 // HERO
 .block.block-hero
   .container
@@ -24,28 +10,34 @@
           %span.hidden-xs September 30, 2016
           %span.visible-xs Sep 30, 2016
           %br
-          Denver, CO
+          %span.hidden-xs Denver, Colorado
+          %span.visible-xs Denver, CO
+        %p Rocky Mountain Ruby is back for the seventh year, bringing together 250 developers in downtown Denver. Attendees will hear from nine industry leaders as we share practices and build our community.
+        %p
+          We are dedicated to a harassment-free conference experience for everyone.
+          %br
+          %a{href: "#"} Our full anti-harassment policy can be found here.
         %a{href: 'https://rockymtnruby2016.busyconf.com/bookings/new', class: 'white-link purchase-tickets'}
           %span Purchase Tickets
 
 // SCHEDULE
--# #schedule.block.block-schedule
-  -# .container
-    -# .inner
-      -# %h2.block-title Schedule
-      -# .block-content
-        -# %h3.text-center Friday, September 30
-        -# %ul.events
-          -# - @schedule.each do |event, index|
-            -# %li{class: 'event ' + cycle("odd", "even")}
-              -# .row
-                -# .col-sm-3
-                  -# %span.event-time= event[:time]
-                  -# %span.event-length= event[:length]
-                -# .col-sm-9
-                  -# %span.event-title= event[:title]
+#schedule.block.block-schedule
+  .container
+    .inner
+      %h2.block-title Schedule
+      .block-content
+        %h3.text-center Friday, September 30
+        %ul.events
+          - @schedule.each do |event, index|
+            %li{class: 'event ' + cycle("odd", "even")}
+              .row
+                .col-sm-3
+                  %span.event-time= event[:time]
+                  %span.event-length= event[:length]
+                .col-sm-9
+                  %span.event-title= event[:title]
 // LOCATION
-#locations.block.block-location-title
+#location.block.block-location-title
   .container
     .inner
       %h2.block-title Location
@@ -71,6 +63,8 @@
   .container
     .inner
       %h2.block-title Speakers
+      %p.text-right.mini
+        RMR2016 will feature seven sessions on development technologies and two community spotlights on important applications of those technologies
       .block-content
         .row
           - @speakers.each do |speaker|
@@ -82,6 +76,9 @@
                   %h4= speaker[:name]
                 .speaker-bio
                   %p= speaker[:bio]
+                .speaker-social
+                  %a{href: speaker[:twitter], target: "_blank"}
+                    = image_tag('twitter.png', size: "24x20")
 
 #contact.block.block-contact
   .container
@@ -107,30 +104,24 @@
                 .btn-form-submit
                   = submit_tag "Send", class: 'btn btn-link btn-submit', 'data-loading-text': "Sending..."
 
--# #sponsors.block.block-sponsors
--#   .container
--#     .inner
--#       %h2.block-title Sponsors
--#       .block-content
--#         .row
--#           - @sponsors.each do |sponsor|
--#             .col-sm-4
--#               .sponsor{'data-mh': 'sponsor', class: cycle("text-left", "text-center", "text-right")}
--#                 = image_tag sponsor, class: 'img-responsive'
-
--# .block.block-vendors
--#   .container
--#     .inner
--#       %h2.block-title Vendors
--#       .block-content
--#         .row
--#           - @vendors.each do |vendor|
--#             .col-sm-4
--#               .vendor{'data-mh': 'vendor', class: cycle("text-left", "text-center", "text-right")}
--#                 = image_tag vendor, class: 'img-responsive'
-
-.block.block-footer
+#organizers.block.block-sponsors
   .container
-    .block-content
-      = image_tag 'logo-pink.png', class: 'logo-pink pull-left'
-      %span Copyright © Rocky Mountain Ruby 2016. All Rights Reserved
+    .inner
+      %h2.block-title Sponsors
+      .block-content
+        .row
+          - @sponsors.each do |sponsor|
+            .col-sm-4
+              .sponsor{'data-mh': 'sponsor', class: cycle("text-left", "text-center", "text-right")}
+                = image_tag sponsor, class: 'img-responsive'
+
+.block.block-vendors
+  .container
+    .inner
+      %h2.block-title Vendors
+      .block-content
+        .row
+          - @vendors.each do |vendor|
+            .col-sm-4
+              .vendor{'data-mh': 'vendor', class: cycle("text-left", "text-center", "text-right")}
+                = image_tag vendor, class: 'img-responsive'
