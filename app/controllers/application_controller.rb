@@ -67,7 +67,7 @@ class ApplicationController < ActionController::Base
         img: 'speakers/andi-rugg.jpg'},
 
       { name: 'Sarah Allen',
-        bio: 'Sarah Allen is a serial innovator with a history of developing leading-edge products, such as After Effects, Shockwave, Flash video, and OpenLaszlo. She co-founded RailsBridge, launched a startup, and now is working to fix government with 18F.',
+        bio: 'Sarah Allen is a serial innovator with a history of developing leading-edge products, such as After Effects, Shockwave, Flash video, and OpenLaszlo. She co-founded RailsBridge, launched a startup, and has worked to fix the US government.  She now works at Google by day, volunteers at Bridge Foundry, and runs a not-yet-profitable startup.',
         img: 'speakers/sarah-allen.jpg',
         twitter: 'https://twitter.com/ultrasaurus'
       },
