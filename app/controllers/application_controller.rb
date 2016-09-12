@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
   		{time: '10:05 am', length: '35 minutes', title: 'Dave Thomas (pragdave.me)'},
   		{time: '10:45 am', length: '15 minutes', title: 'Community Spotlight: Jackie Ros (Revolar)'},
   		{time: '11:05 am', length: '35 minutes', title: 'Erika Carlson (Detroit Labs)'},
-  		{time: '11:45 am', length: '35 minutes', title: 'Kinsey Ann Durham (GoSpotCheck)'},
+  		{time: '11:45 am', length: '35 minutes', title: 'Kinsey Ann Durham & Kim Barnes (GoSpotCheck)'},
   		{time: '12:25 pm', length: '35 minutes', title: 'Ingrid Alongi (Cognizant Quick Left)'},
   		{time: '1:00 pm',  length: '60 minutes', title: 'Lunch'},
   		{time: '2:00 pm',  length: '5 minutes',  title: 'Reconvene'},
@@ -40,6 +40,12 @@ class ApplicationController < ActionController::Base
         bio: 'Kinsey is a software engineer at GoSpotCheck here in Denver. She is the co-founder of Kubmo, a non-profit dedicated to building and teaching technology curriculum to young women around the world. She is the chair of the BridgeFoundry board and organizes the Scholars and Guides Programs for Ruby Central conferences.',
         img: 'speakers/kinsey-ann-durham.jpg',
         twitter: 'https://twitter.com/KinseyAnnDurham'
+      },
+
+      { name: 'Kim Barnes',
+        bio: 'Kim is a software engineer and team lead at GoSpotCheck. As a kid, her dad introduced her to programming by assigning Basic programs as chores. Since then, she has had a variety of experiences with different technologies, processes, and teams. Kim is passionate about TDD, pair programming, and enjoys mentoring other passionate developers.',
+        img: 'speakers/kim-barnes.jpg',
+        twitter: 'https://twitter.com/kimberlydbarnes'
       },
 
       { name: 'Jackie Ros',
