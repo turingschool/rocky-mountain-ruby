@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
 
   def index
   	@schedule = [
-  		{time: '9:00 am',  length: '60 minutes', title: 'Registration, Continental Breakfast, Games/Demos'},
+  		{time: '9:00 am',  length: '60 minutes', title: 'Registration, Continental Breakfast'},
   		{time: '10:00 am', length: '5 minutes',  title: 'Opening/Kickoff'},
   		{time: '10:05 am', length: '35 minutes', title: 'Dave Thomas (pragdave.me)'},
   		{time: '10:45 am', length: '15 minutes', title: 'Community Spotlight: Jackie Ros (Revolar)'},
