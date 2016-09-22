@@ -15,11 +15,11 @@ class ApplicationController < ActionController::Base
   		{time: '12:25 pm', length: '35 minutes', title: 'Ingrid Alongi (Cognizant Quick Left)'},
   		{time: '1:00 pm',  length: '60 minutes', title: 'Lunch'},
   		{time: '2:00 pm',  length: '5 minutes',  title: 'Reconvene'},
-  		{time: '2:05 pm',  length: '25 minutes', title: 'Sarah Allen (18F)'},
-  		{time: '2:35 pm',  length: '15 minutes', title: 'Community Spotlight: Andi Rugg (Skillful / Markle Foundation)'},
-      {time: '2:55 pm',  length: '35 minutes', title: 'Chad Fowler (Wunderlist / Microsoft)'},
-      {time: '3:35 pm',  length: '35 minutes', title: 'Saron Yitbarek (CodeNewbie)'},
-      {time: '4:15 pm',  length: '15 minutes', title: 'Thanks & Closing'},
+  		{time: '2:05 pm',  length: '35 minutes', title: 'Sarah Allen (Google)'},
+  		{time: '2:45 pm',  length: '15 minutes', title: 'Community Spotlight: Andi Rugg (Skillful / Markle Foundation)'},
+      {time: '3:05 pm',  length: '35 minutes', title: 'Chad Fowler (Wunderlist / Microsoft)'},
+      {time: '3:45 pm',  length: '35 minutes', title: 'Saron Yitbarek (CodeNewbie)'},
+      {time: '4:25 pm',  length: '5 minutes',  title: 'Thanks & Closing'},
       {time: '4:30 pm',  length: '90 minutes', title: 'Social Hour (Sharpe Lobby)'}
   	]
 
