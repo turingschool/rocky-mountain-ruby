@@ -119,9 +119,9 @@ class ApplicationController < ActionController::Base
 
   def setup_nav_links
     @nav = [
-      {title: 'Schedule',               href: '/#schedule'},
       {title: 'Location',               href: '/#location'},
       {title: 'Speakers',               href: '/#speakers'},
+      {title: 'Schedule',               href: '/#schedule'},
       {title: 'Contact',                href: '/#contact'},
       {title: 'Sponsors',               href: '/#sponsors'},
       {title: 'Tickets',                href: 'https://rockymtnruby2016.busyconf.com/bookings/new'},
