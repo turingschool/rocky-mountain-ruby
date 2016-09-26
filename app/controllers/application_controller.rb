@@ -5,16 +5,7 @@ class ApplicationController < ActionController::Base
   invisible_captcha only: [:contact], honeypot: :topic
 
   def index
-    @nav = [
-      {title: 'Schedule',               href: '/#schedule'},
-      {title: 'Location',               href: '/#location'},
-      {title: 'Speakers',               href: '/#speakers'},
-      {title: 'Contact',                href: '/#contact'},
-      {title: 'Sponsors',               href: '/#sponsors'},
-      {title: 'Tickets',                href: 'https://rockymtnruby2016.busyconf.com/bookings/new'},
-      {title: 'Scholars',               href: '/scholars-program'},
-      {title: 'Anti-Harrasment Policy', href: '/policy'}
-    ]
+    @nav = setup_nav_links
 
   	@schedule = [
   		{time: '9:00 am',  length: '60 minutes', title: 'Registration, Continental Breakfast'},
@@ -110,15 +101,32 @@ class ApplicationController < ActionController::Base
   end
 
   def scholars_program
+    @nav         = setup_nav_links
     @active_path = '/scholars-program'
   end
 
   def policy
+    @nav         = setup_nav_links
     @active_path = '/policy'
   end
 
   def contact
     ContactMailer.form_request(params[:name], params[:email], params[:comment]).deliver_now
     render text: 'Message sent successfully. Thank you.', status: 200
+  end
+
+  private
+
+  def setup_nav_links
+    @nav = [
+      {title: 'Schedule',               href: '/#schedule'},
+      {title: 'Location',               href: '/#location'},
+      {title: 'Speakers',               href: '/#speakers'},
+      {title: 'Contact',                href: '/#contact'},
+      {title: 'Sponsors',               href: '/#sponsors'},
+      {title: 'Tickets',                href: 'https://rockymtnruby2016.busyconf.com/bookings/new'},
+      {title: 'Scholars',               href: '/scholars-program'},
+      {title: 'Anti-Harrasment Policy', href: '/policy'}
+    ]
   end
 end
