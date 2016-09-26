@@ -5,6 +5,17 @@ class ApplicationController < ActionController::Base
   invisible_captcha only: [:contact], honeypot: :topic
 
   def index
+    @nav = [
+      {title: 'Schedule',               href: '/#schedule'},
+      {title: 'Location',               href: '/#location'},
+      {title: 'Speakers',               href: '/#speakers'},
+      {title: 'Contact',                href: '/#contact'},
+      {title: 'Sponsors',               href: '/#sponsors'},
+      {title: 'Tickets',                href: 'https://rockymtnruby2016.busyconf.com/bookings/new'},
+      {title: 'Scholars',               href: '/scholars-program'},
+      {title: 'Anti-Harrasment Policy', href: '/policy'}
+    ]
+
   	@schedule = [
   		{time: '9:00 am',  length: '60 minutes', title: 'Registration, Continental Breakfast'},
   		{time: '10:00 am', length: '5 minutes',  title: 'Opening/Kickoff'},

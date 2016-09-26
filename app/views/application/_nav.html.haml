@@ -1,19 +1,19 @@
 %header.block.block-navigation
   .container
+    %a{href: "#", id: 'toggle-nav', class: 'toggle-nav visible-xs visible-sm'}
+      = image_tag 'logo-pink.png', class: 'logo-pink'
+      Menu
     %nav{class: 'navbar', id: 'navbar'}
       %ul{class: 'nav navbar-nav'}
-        %li
-          %a{href:'#home'}
-            = image_tag 'logo-pink.png', class: 'logo-pink'
-        - @nav.each do |name|
-          %li
-            %a{href: "#" + name.downcase}
-              %span= name
-        %li
-          %a{href: 'https://rockymtnruby2016.busyconf.com/bookings/new'}
-            %span
-              Tickets
-        %li
-          %a{href: 'https://github.com/turingschool/rocky-mountain-ruby/blob/master/public/scholars_program.md'}
-            %span
-              Scholars Program
+        %li.logo
+          = image_tag 'logo-pink.png', class: 'toggle-nav logo-pink hidden-xs hidden-sm', size: '30x20'
+          = image_tag 'close.png', class: 'toggle-nav logo-pink visible-xs visible-sm', size: '20x20'
+        - @nav.each do |item|
+          - if (@active_path == item[:href])
+            %li.active
+              %a{href: item[:href]}
+                %span= item[:title]
+          - else
+            %li
+              %a{href: item[:href]}
+                %span= item[:title]
