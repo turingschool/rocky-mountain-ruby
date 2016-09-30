@@ -11,18 +11,18 @@ class ApplicationController < ActionController::Base
   		{time: '9:00 am',  length: '60 minutes', title: 'Registration, Continental Breakfast'},
   		{time: '10:00 am', length: '5 minutes',  title: 'Opening/Kickoff'},
   		{time: '10:05 am', length: '35 minutes', title: 'Dave Thomas (pragdave.me)'},
-  		{time: '10:45 am', length: '15 minutes', title: 'Community Spotlight: Andi Rugg (Skillful / Markle Foundation)'},
-  		{time: '11:05 am', length: '35 minutes', title: 'Erika Carlson (Detroit Labs)'},
-  		{time: '11:45 am', length: '35 minutes', title: 'Kinsey Ann Durham & Kim Barnes (GoSpotCheck)'},
-  		{time: '12:25 pm', length: '35 minutes', title: 'Ingrid Alongi (Cognizant Quick Left)'},
-  		{time: '1:00 pm',  length: '60 minutes', title: 'Lunch'},
-  		{time: '2:00 pm',  length: '5 minutes',  title: 'Reconvene'},
-  		{time: '2:05 pm',  length: '35 minutes', title: 'Sarah Allen (Google)'},
-  		{time: '2:45 pm',  length: '15 minutes', title: 'Community Spotlight: Jackie Ros (Revolar)'},
-      {time: '3:05 pm',  length: '35 minutes', title: 'Chad Fowler (Wunderlist / Microsoft)'},
-      {time: '3:45 pm',  length: '35 minutes', title: 'Saron Yitbarek (CodeNewbie)'},
-      {time: '4:25 pm',  length: '5 minutes',  title: 'Thanks & Closing'},
-      {time: '4:30 pm',  length: '90 minutes', title: 'Social Hour (Sharpe Lobby)'}
+  		{time: '10:45 am', length: '35 minutes', title: 'Erika Carlson (Detroit Labs)'},
+  		{time: '11:25 am', length: '35 minutes', title: 'Kinsey Ann Durham & Kim Barnes (GoSpotCheck)'},
+  		{time: '12:05 pm', length: '35 minutes', title: 'Ingrid Alongi (Cognizant Quick Left)'},
+  		{time: '12:45 pm', length: '60 minutes', title: 'Lunch'},
+  		{time: '1:45 pm',  length: '5 minutes',  title: 'Reconvene'},
+  		{time: '1:50 pm',  length: '35 minutes', title: 'Sarah Allen (Google)'},
+      {time: '2:30 am',  length: '15 minutes', title: 'Community Spotlight: Andi Rugg (Skillful / Markle Foundation)'},
+  		{time: '2:50 pm',  length: '15 minutes', title: 'Community Spotlight: Jackie Ros (Revolar)'},
+      {time: '3:10 pm',  length: '35 minutes', title: 'Chad Fowler (Wunderlist / Microsoft)'},
+      {time: '3:50 pm',  length: '35 minutes', title: 'Saron Yitbarek (CodeNewbie)'},
+      {time: '4:30 pm',  length: '5 minutes',  title: 'Thanks & Closing'},
+      {time: '4:35 pm',  length: '85 minutes', title: 'Social Hour (Sharpe Lobby)'}
   	]
 
     @speakers = [
