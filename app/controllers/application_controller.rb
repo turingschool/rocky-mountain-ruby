@@ -5,7 +5,16 @@ class ApplicationController < ActionController::Base
   invisible_captcha only: [:contact], honeypot: :topic
 
   def index
-    @nav = setup_nav_links
+    @nav = [
+      {title: 'Location',               href: '/#location'},
+      # {title: 'Speakers',               href: '/#speakers'},
+      # {title: 'Schedule',               href: '/#schedule'},
+      {title: 'Contact',                href: '/#contact'},
+      # {title: 'Sponsors',               href: '/#sponsors'},
+      {title: 'Tickets',                href: 'https://rockymtnruby2017.busyconf.com/bookings/new'},
+      # {title: 'Scholars',               href: '/scholars-program'},
+      {title: 'Anti-Harrasment Policy', href: '/policy'}
+    ]
 
   	@schedule = [
   		{time: '9:00 am',  length: '60 minutes', title: 'Registration, Continental Breakfast'},
@@ -97,7 +106,8 @@ class ApplicationController < ActionController::Base
       'sponsors/rubygarage.png'  => 'https://rubygarage.org'
     }
 
-    @sections = %w(hero location speakers schedule contact sponsors media_sponsors)
+    @sections = %w(hero location contact)
+    # @sections = %w(hero location speakers schedule contact sponsors media_sponsors)
   end
 
   def scholars_program
@@ -113,20 +123,5 @@ class ApplicationController < ActionController::Base
   def contact
     ContactMailer.form_request(params[:name], params[:email], params[:comment]).deliver_now
     render text: 'Message sent successfully. Thank you.', status: 200
-  end
-
-  private
-
-  def setup_nav_links
-    @nav = [
-      {title: 'Location',               href: '/#location'},
-      {title: 'Speakers',               href: '/#speakers'},
-      {title: 'Schedule',               href: '/#schedule'},
-      {title: 'Contact',                href: '/#contact'},
-      {title: 'Sponsors',               href: '/#sponsors'},
-      {title: 'Tickets',                href: 'https://rockymtnruby2016.busyconf.com/bookings/new'},
-      {title: 'Scholars',               href: '/scholars-program'},
-      {title: 'Anti-Harrasment Policy', href: '/policy'}
-    ]
   end
 end
