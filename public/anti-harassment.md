@@ -55,7 +55,7 @@ In the event of any questions or problems please contact:
 * Email: contact@rockymtnruby.com
 * Twitter: [@rockymtnruby](https://twitter.com/rockymtnruby)
 * Phone/Text: [TODO: conference organizer phone]
-* Denver Art Museum: (720) 865-5000
+* The Oxford Hotel: (303) 628-5400
 * Denver Police: (720) 913-2000
 * [Denver Sexual Assault Hotline](http://thebluebench.org/): (303) 322-7273
 
