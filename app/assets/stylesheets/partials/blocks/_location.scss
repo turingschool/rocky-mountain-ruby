@@ -2,6 +2,10 @@
 	&-title {
 		margin-bottom: 0px;
 	}
+  &-image-filler {
+    background-color: $brand-primary-dark;
+    margin-bottom: 0;
+  }
 	&-image {
 		margin-bottom: 0px;
 		background: white asset-url('denver.jpg') top right no-repeat;
@@ -13,13 +17,16 @@
 	  		height: 200px;
 	    	-webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%);
 			clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%);
-	  	}	  	
+	  	}
 	}
 	&-content {
 		address {
 			margin-top: 25px;
-			margin-bottom: 65px;
+			padding-bottom: 65px;
 		}
-		padding-bottom: 50px;
+		padding-bottom: 100px;
+    margin-bottom: 0;
+    background-color: $brand-primary-dark;
+    color: white;
 	}
 }

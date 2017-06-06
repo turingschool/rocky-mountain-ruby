@@ -1,5 +1,5 @@
 .block-contact {
-	background: $brand-primary;
+	background: #66293A;
 	padding: 40px 0px;
 	.block-title {
 		color: white;
@@ -47,7 +47,7 @@
 					}
 					border: 0px;
 					box-shadow: none;
-					border-bottom: 1px solid rgba(255, 255, 255, 0.5);					
+					border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 				}
 				input:focus + label:not(.error) {
 					visibility: visible;
@@ -59,17 +59,17 @@
 				}
 			}
 			.form-group-form-actions {
-				margin-top: 45px;	
+				margin-top: 45px;
 				p {
 					color: white;
 				}
-				.btn-form-submit {	
-					border-bottom: 4px solid white;	
-					border-radius: 0px;			
+				.btn-form-submit {
+					border-bottom: 4px solid white;
+					border-radius: 0px;
 					display: inline-block;
 					input {
 						outline: none;
-						padding: 0px;					
+						padding: 0px;
 						font-size: 16px;
 						letter-spacing: 1px;
 						text-decoration: none;
@@ -89,15 +89,15 @@
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: white;  
+   color: white;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: white;  
+   color: white;
 }
 
-:-ms-input-placeholder {  
-   color: white;  
+:-ms-input-placeholder {
+   color: white;
 }
 
 input:-webkit-autofill {
