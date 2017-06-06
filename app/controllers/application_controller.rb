@@ -79,7 +79,7 @@ class ApplicationController < ActionController::Base
       # {title: 'Sponsors',               href: '/#sponsors'},
       {title: 'Tickets',                href: 'https://rockymtnruby2017.busyconf.com/bookings/new'},
       # {title: 'Scholars',               href: '/scholars-program'},
-      {title: 'Anti-Harrasment Policy', href: '/policy'}
+      {title: 'Anti-Harassment Policy', href: '/policy'}
     ]
   end
 end
