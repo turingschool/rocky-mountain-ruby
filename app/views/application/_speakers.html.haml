@@ -15,7 +15,7 @@
                 .speaker-name
                   %h4= speaker[:name]
                 .speaker-bio
-                  %p= speaker[:bio]
+                  %p= raw speaker[:bio]
                 - if speaker[:twitter]
                   .speaker-social
                     %a{href: speaker[:twitter], target: "_blank"}

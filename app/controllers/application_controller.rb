@@ -6,9 +6,9 @@ class ApplicationController < ActionController::Base
 
   def index
     @nav = [
+      {title: 'Schedule',               href: '/#schedule'},
       {title: 'Location',               href: '/#location'},
-      # {title: 'Speakers',               href: '/#speakers'},
-      # {title: 'Schedule',               href: '/#schedule'},
+      {title: 'Speakers',               href: '/#speakers'},
       {title: 'Contact',                href: '/#contact'},
       # {title: 'Sponsors',               href: '/#sponsors'},
       {title: 'Tickets',                href: 'https://rockymtnruby2017.busyconf.com/bookings/new'},
@@ -19,81 +19,33 @@ class ApplicationController < ActionController::Base
   	@schedule = [
   		{time: '9:00 am',  length: '60 minutes', title: 'Registration, Continental Breakfast'},
   		{time: '10:00 am', length: '5 minutes',  title: 'Opening/Kickoff'},
-  		{time: '10:05 am', length: '35 minutes', title: 'Dave Thomas (pragdave.me)'},
-  		{time: '10:45 am', length: '35 minutes', title: 'Erika Carlson (Detroit Labs)'},
-  		{time: '11:25 am', length: '35 minutes', title: 'Kinsey Ann Durham & Kim Barnes (GoSpotCheck)'},
-  		{time: '12:05 pm', length: '35 minutes', title: 'Ingrid Alongi (Cognizant Quick Left)'},
+  		{time: '10:05 am', length: '35 minutes', title: 'Ben Orenstein'},
+  		{time: '10:45 am', length: '35 minutes', title: 'Sarah Mei'},
+  		{time: '11:25 am', length: '35 minutes', title: 'Announcing Soon'},
+  		{time: '12:05 pm', length: '35 minutes', title: 'Announcing Soon'},
   		{time: '12:45 pm', length: '60 minutes', title: 'Lunch'},
   		{time: '1:45 pm',  length: '5 minutes',  title: 'Reconvene'},
-  		{time: '1:50 pm',  length: '35 minutes', title: 'Sarah Allen (Google)'},
-      {time: '2:30 am',  length: '15 minutes', title: 'Community Spotlight: Andi Rugg (Skillful / Markle Foundation)'},
-  		{time: '2:50 pm',  length: '15 minutes', title: 'Community Spotlight: Jackie Ros (Revolar)'},
-      {time: '3:10 pm',  length: '35 minutes', title: 'Chad Fowler (Wunderlist / Microsoft)'},
-      {time: '3:50 pm',  length: '35 minutes', title: 'Saron Yitbarek (CodeNewbie)'},
+  		{time: '1:50 pm',  length: '35 minutes', title: 'Announcing Soon'},
+      {time: '2:30 am',  length: '15 minutes', title: 'Community Spotlight: Announcing Soon'},
+  		{time: '2:50 pm',  length: '15 minutes', title: 'Community Spotlight: Announcing Soon'},
+      {time: '3:10 pm',  length: '35 minutes', title: 'Announcing Soon'},
+      {time: '3:50 pm',  length: '35 minutes', title: 'Announcing Soon'},
       {time: '4:30 pm',  length: '5 minutes',  title: 'Thanks & Closing'},
-      {time: '4:35 pm',  length: '85 minutes', title: 'Social Hour (Sharpe Lobby)'}
+      {time: '4:35 pm',  length: '85 minutes', title: 'Social Hour'}
   	]
 
     @speakers = [
-      { name: 'Ingrid Alongi',
-        bio: 'Ingrid is a software engineer and founder of Quick Left, a software development company, which was acquired by Cognizant in 2016. With deep roots in the Colorodo technology community and many years experience as both a developer and leader, Ingrid is always interested in exploring the intersection of technology and human connection.',
-        img: 'speakers/ingrid-alongi.jpg',
-        twitter: 'https://twitter.com/electromute'
+      { name: 'Sarah Mei',
+        bio: "Sarah is a Chief Consultant at DevMynd Software where she works to help clients untangle the most tangled projects. She is a co-founder of <a href='http://railsbridge.org'>RailsBridge</a>, board member of <a href='http://rubycentral.org'>Ruby Central</a>, frequent speaker at <a href='http://confreaks.tv/presenters/sarah-mei'>technical conferences</a>, and prolific author of tweet storms actually worth reading.",
+        img: 'speakers/sarah-mei.jpg',
+        twitter: 'https://twitter.com/sarahmei'
       },
 
-      { name: 'Dave Thomas',
-        bio: 'Dave opened Ruby to the English-speaking world with his book "Programming Ruby" and changed thousands of careers with "The Pragmatic Programmer". From there, he co-founded The Pragmatic Bookshelf publishing company which has gone on to publish the top-choice books for dozens of technologies.',
-        img: 'speakers/dave-thomas.jpg',
-        twitter: 'https://twitter.com/pragdave'
+      { name: 'Ben Orenstein',
+        bio: "<a href='http://www.benorenstein.com'>Ben</a> has spent many years at thoughtbot and recently stepped out on his own to form a new company. In recent years he’s build <a href='http://upcase.com'>Upcase</a>, hosted the <a href='http://giantrobots.fm'>Giant Robots</a> podcast, and further spread the virus/virtue of Vim. You can find some of his previous conference talks on <a href='http://confreaks.tv/presenters/ben-orenstein'>Confreaks</a>.",
+        img: 'speakers/ben-orenstein.jpg',
+        twitter: 'https://twitter.com/r00k'
       },
-
-      { name: 'Kinsey Ann Durham',
-        bio: 'Kinsey is a software engineer at GoSpotCheck here in Denver. She is the co-founder of Kubmo, a non-profit dedicated to building and teaching technology curriculum to young women around the world. She is the chair of the BridgeFoundry board and organizes the Scholars and Guides Programs for Ruby Central conferences.',
-        img: 'speakers/kinsey-ann-durham.jpg',
-        twitter: 'https://twitter.com/KinseyAnnDurham'
-      },
-
-      { name: 'Kim Barnes',
-        bio: 'Kim is a software engineer and team lead at GoSpotCheck. As a kid, her dad introduced her to programming by assigning Basic programs as chores. Since then, she has had a variety of experiences with different technologies, processes, and teams. Kim is passionate about TDD, pair programming, and enjoys mentoring other passionate developers.',
-        img: 'speakers/kim-barnes.jpg',
-        twitter: 'https://twitter.com/kimberlydbarnes'
-      },
-
-      { name: 'Jackie Ros',
-        subtitle: 'Community Spotlight',
-        bio: 'Can wearable IoT devices make us safer? Jackie founded Revolar to find out. She brings perspective and lessons learned from getting the product to market, accelerating the business through Techstars, and helping build the Denver community.',
-        img: 'speakers/jackie-ros.jpg',
-        twitter: 'https://twitter.com/jackie_ros'
-      },
-
-      { name: 'Erika Carlson',
-        bio: 'In 2011 Erika wrote her first line of Python. She fell in love with programming, decided to change paths, and is now a software developer and director of the Developer Apprentice Program at Detroit Labs. Erika is deeply passionate about creating a community of peers and mentors for women exploring the field of technology.',
-        img: 'speakers/erika-carlson.jpg',
-        twitter: 'https://twitter.com/eacarlson'
-      },
-
-      { name: 'Saron Yitbarek',
-        bio: 'Formerly an apprentice herself, she started the CodeNewbie movement: the most supportive community of programmers and people learning to code. Saron will bring her perspective to share ideas for learners and coaches.',
-        img: 'speakers/saron-yitbarek.jpg',
-        twitter: 'https://twitter.com/saronyitbarek'
-      },
-
-      { name: 'Andi Rugg',
-        subtitle: 'Community Spotlight',
-        bio: 'Can we use data to fix the labor market? Across industries, there are many open jobs and many people under-employed or unemployed. Andi leads Skillful, an initiative from the Markle Foundation to help great people get the training to start great careers.',
-        img: 'speakers/andi-rugg.jpg'},
-
-      { name: 'Sarah Allen',
-        bio: 'Sarah Allen is a serial innovator with a history of developing leading-edge products, such as After Effects, Shockwave, Flash video, and OpenLaszlo. She co-founded RailsBridge, launched a startup, and has worked to fix the US government.  She now works at Google by day, volunteers at Bridge Foundry, and runs a not-yet-profitable startup.',
-        img: 'speakers/sarah-allen.jpg',
-        twitter: 'https://twitter.com/ultrasaurus'
-      },
-
-      { name: 'Chad Fowler',
-        bio: 'Chad is a long-time Ruby developer, community builder, and team leader. He started and co-organized a couple of Ruby-related conferences including The International Ruby Conference and RailsConf. Chad has lived through Six-Sigma, a flagging unicorn startup, and finally small business success.',
-        img: 'speakers/chad-fowler.jpg',
-        twitter: 'https://twitter.com/chadfowler'
-      }
     ]
 
     @sponsors = {
@@ -106,7 +58,7 @@ class ApplicationController < ActionController::Base
       'sponsors/rubygarage.png'  => 'https://rubygarage.org'
     }
 
-    @sections = %w(hero location contact)
+    @sections = %w(hero schedule location speakers contact)
     # @sections = %w(hero location speakers schedule contact sponsors media_sponsors)
   end
 
