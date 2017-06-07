@@ -33,7 +33,7 @@ class ApplicationController < ActionController::Base
       },
 
       { name: 'Ben Orenstein',
-        bio: "<a href='http://www.benorenstein.com'>Ben</a> has spent many years at thoughtbot and recently stepped out on his own to form a new company. In recent years he’s build <a href='http://upcase.com'>Upcase</a>, hosted the <a href='http://giantrobots.fm'>Giant Robots</a> podcast, and further spread the virus/virtue of Vim. You can find some of his previous conference talks on <a href='http://confreaks.tv/presenters/ben-orenstein'>Confreaks</a>.",
+        bio: "<a href='http://www.benorenstein.com'>Ben</a> has spent many years at thoughtbot and recently stepped out on his own to form a new company. In recent years he’s built <a href='http://upcase.com'>Upcase</a>, hosted the <a href='http://giantrobots.fm'>Giant Robots</a> podcast, and further spread the virus/virtue of Vim. You can find some of his previous conference talks on <a href='http://confreaks.tv/presenters/ben-orenstein'>Confreaks</a>.",
         img: 'speakers/ben-orenstein.jpg',
         twitter: 'https://twitter.com/r00k'
       },
