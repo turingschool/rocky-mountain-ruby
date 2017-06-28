@@ -57,7 +57,7 @@ class ApplicationController < ActionController::Base
       },
 
       { name: 'Adam Cuppy',
-        bio: "Adam is not a best selling authorm, Fortune 500 CEO, nor a Nobel Prize recipient. He is, nevertheless, the co-founder of Coding Zeal, experienced developer, and occasional thespian.",
+        bio: "Adam is not a best selling author, Fortune 500 CEO, nor a Nobel Prize recipient. He is, nevertheless, the co-founder of Coding Zeal, experienced developer, and occasional thespian.",
         img: 'speakers/adam-cuppy.jpg',
         twitter: 'https://twitter.com/adamcuppy'
       },
