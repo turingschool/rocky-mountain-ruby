@@ -8,19 +8,19 @@ class ApplicationController < ActionController::Base
     @nav = setup_nav_links
 
   	@schedule = [
-  		{time: '9:00 am',  length: '60 minutes', title: 'Registration, Continental Breakfast'},
-  		{time: '10:00 am', length: '5 minutes',  title: 'Opening/Kickoff'},
-  		{time: '10:05 am', length: '35 minutes', title: 'Ben Orenstein'},
-  		{time: '10:45 am', length: '35 minutes', title: 'Sarah Mei'},
-  		{time: '11:25 am', length: '35 minutes', title: 'Announcing Soon'},
-  		{time: '12:05 pm', length: '35 minutes', title: 'Announcing Soon'},
-  		{time: '12:45 pm', length: '60 minutes', title: 'Lunch'},
-  		{time: '1:45 pm',  length: '5 minutes',  title: 'Reconvene'},
-  		{time: '1:50 pm',  length: '35 minutes', title: 'Announcing Soon'},
-      {time: '2:30 am',  length: '15 minutes', title: 'Community Spotlight: Announcing Soon'},
+      {time: '9:00 am',  length: '60 minutes', title: 'Registration, Continental Breakfast'},
+      {time: '10:00 am', length: '5 minutes',  title: 'Opening/Kickoff'},
+      {time: '10:05 am', length: '35 minutes', title: 'Sarah Mei'},
+      {time: '10:45 am', length: '35 minutes', title: 'Brittany Storoz'},
+      {time: '2:30 am',  length: '15 minutes', title: 'Community Spotlight: Defy Ventures'},
+      {time: '11:25 am', length: '35 minutes', title: 'Amy Chen'},
+      {time: '12:05 pm', length: '35 minutes', title: 'Anjuan Simmons'},
+      {time: '12:45 pm', length: '60 minutes', title: 'Lunch'},
+      {time: '1:45 pm',  length: '5 minutes',  title: 'Reconvene'},
+      {time: '1:50 pm',  length: '35 minutes', title: 'Adam Cuppy'},
   		{time: '2:50 pm',  length: '15 minutes', title: 'Community Spotlight: Announcing Soon'},
-      {time: '3:10 pm',  length: '35 minutes', title: 'Announcing Soon'},
-      {time: '3:50 pm',  length: '35 minutes', title: 'Announcing Soon'},
+      {time: '3:10 pm',  length: '35 minutes', title: 'Vaidehi Joshi'},
+      {time: '3:50 pm',  length: '35 minutes', title: 'Ben Orenstein'},
       {time: '4:30 pm',  length: '5 minutes',  title: 'Thanks & Closing'},
       {time: '4:35 pm',  length: '85 minutes', title: 'Social Hour'}
   	]
@@ -29,6 +29,42 @@ class ApplicationController < ActionController::Base
       { name: 'Sarah Mei',
         bio: "Sarah is a Chief Consultant at DevMynd Software where she works to help clients untangle the most tangled projects. She is a co-founder of <a href='http://railsbridge.org'>RailsBridge</a>, board member of <a href='http://rubycentral.org'>Ruby Central</a>, frequent speaker at <a href='http://confreaks.tv/presenters/sarah-mei'>technical conferences</a>, and prolific author of tweet storms actually worth reading.",
         img: 'speakers/sarah-mei.jpg',
+        twitter: 'https://twitter.com/sarahmei'
+      },
+
+      { name: 'Brittany Storoz',
+        bio: "Brittany has been an EMT, swim coach, and sports reporter but there is little she loves more than programming. She’s been a programmer for almost ten years, focusing on front-end HTML, CSS and JavaScript while working at Mozilla, The New York Times, and teaching at The Turing School.",
+        img: 'speakers/brittany-storoz.jpg',
+        twitter: 'https://twitter.com/brittanystoroz'
+      },
+
+      { name: 'Defy Ventures',
+        bio: "Defy Ventures works to 'transform the hustle' of currently and formerly incarcerated Entrepreneurs-in-Training by offering intensive leadership development, business plan competitions, executive mentoring, financial investment, and startup incubation.",
+        img: 'speakers/defy-ventures.jpg',
+        twitter: 'https://twitter.com/defyventures'
+      },
+
+      { name: 'Amy Chen',
+        bio: "Amy is a software engineer at Rancher Labs. She is passionate about open source, containers, orchestration tools, Go, and salsa dancing. Amy runs a youtube channel <a href='https://www.youtube.com/AmyCodes'>Amy Codes</a> where she talks about technical and non-technical aspects of being a software engineer.",
+        img: 'speakers/amy-chen.jpg',
+        twitter: 'https://twitter.com/theamycode'
+      },
+
+      { name: 'Anjuan Simmons',
+        bio: "Anjuan Simmons is a technologist with a successful track record of delivering technology solutions from the user interface to the database. He presents at conferences, seminars, schools, and community centers around the world on topics including Agile software development, diversity, and leadership. Anjuan has an undergraduate degree in electrical engineering from the University of Texas at Austin and an MBA from Texas A&M University.",
+        img: 'speakers/anjuan-simmons.jpg',
+        twitter: 'https://twitter.com/anjuan'
+      },
+
+      { name: 'Adam Cuppy',
+        bio: "Adam is not a best selling authorm, Fortune 500 CEO, nor a Nobel Prize recipient. He is, nevertheless, the co-founder of Coding Zeal, experienced developer, and occasional thespian.",
+        img: 'speakers/adam-cuppy.jpg',
+        twitter: 'https://twitter.com/adamcuppy'
+      },
+
+      { name: 'Vaidehi Joshi',
+        bio: "Vaidehi is a software engineer at Tilde, where she works on Skylight—your favorite Rails profiler! She enjoys building and breaking code, but she loves creating empathetic engineering teams a whole lot more. In her spare time, she runs <a href='https://medium.com/basecs'>basecs</a>, a weekly writing series that explores the fundamentals of computer science.",
+        img: 'speakers/vaidehi-joshi.jpg',
         twitter: 'https://twitter.com/sarahmei'
       },
 
