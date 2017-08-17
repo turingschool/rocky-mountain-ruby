@@ -12,17 +12,18 @@ class ApplicationController < ActionController::Base
       {time: '10:00 am', length: '5 minutes',  title: 'Opening/Kickoff'},
       {time: '10:05 am', length: '35 minutes', title: 'Sarah Mei'},
       {time: '10:45 am', length: '35 minutes', title: 'Brittany Storoz'},
-      {time: '2:30 am',  length: '15 minutes', title: 'Community Spotlight: Defy Ventures'},
-      {time: '11:25 am', length: '35 minutes', title: 'Amy Chen'},
-      {time: '12:05 pm', length: '35 minutes', title: 'Anjuan Simmons'},
-      {time: '12:45 pm', length: '60 minutes', title: 'Lunch'},
-      {time: '1:45 pm',  length: '5 minutes',  title: 'Reconvene'},
-      {time: '1:50 pm',  length: '35 minutes', title: 'Adam Cuppy'},
-  		{time: '2:50 pm',  length: '15 minutes', title: 'Community Spotlight: Announcing Soon'},
-      {time: '3:10 pm',  length: '35 minutes', title: 'Vaidehi Joshi'},
-      {time: '3:50 pm',  length: '35 minutes', title: 'Ben Orenstein'},
-      {time: '4:30 pm',  length: '5 minutes',  title: 'Thanks & Closing'},
-      {time: '4:35 pm',  length: '85 minutes', title: 'Social Hour'}
+      {time: '11:25 am',  length: '10 minutes', title: 'Community Spotlight: Defy Ventures'},
+      {time: '11:40 am', length: '35 minutes', title: 'Amy Chen'},
+      {time: '12:15 pm', length: '60 minutes', title: 'Lunch'},
+      {time: '1:10 pm',  length: '5 minutes',  title: 'Reconvene'},
+      {time: '1:15 pm', length: '35 minutes', title: 'Anjuan Simmons'},
+      {time: '1:55 pm',  length: '35 minutes', title: 'Adam Cuppy'},
+  		{time: '2:35 pm',  length: '10 minutes', title: 'Community Spotlight: Announcing Soon'},
+      {time: '2:50 pm',  length: '35 minutes', title: 'Vaidehi Joshi'},
+      {time: '3:30 pm',  length: '35 minutes', title: 'Pending'},
+      {time: '4:10 pm',  length: '35 minutes', title: 'Ben Orenstein'},
+      {time: '4:45 pm',  length: '5 minutes',  title: 'Thanks & Closing'},
+      {time: '4:50 pm',  length: '85 minutes', title: 'Social Hour'}
   	]
 
     @speakers = [
