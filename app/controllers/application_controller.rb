@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
       {time: '9:00 am',  length: '60 minutes', title: 'Registration, Continental Breakfast'},
       {time: '10:00 am', length: '5 minutes',  title: 'Opening/Kickoff'},
       {time: '10:05 am', length: '35 minutes', title: 'Sarah Mei'},
-      {time: '10:45 am', length: '35 minutes', title: 'Brittany Storoz'},
+      {time: '10:45 am', length: '35 minutes', title: '(pending)'},
       {time: '11:25 am',  length: '10 minutes', title: 'Community Spotlight: Defy Ventures'},
       {time: '11:40 am', length: '35 minutes', title: 'Amy Chen'},
       {time: '12:15 pm', length: '60 minutes', title: 'Lunch'},
@@ -20,7 +20,7 @@ class ApplicationController < ActionController::Base
       {time: '1:55 pm',  length: '35 minutes', title: 'Adam Cuppy'},
   		{time: '2:35 pm',  length: '10 minutes', title: 'Community Spotlight: Announcing Soon'},
       {time: '2:50 pm',  length: '35 minutes', title: 'Vaidehi Joshi'},
-      {time: '3:30 pm',  length: '35 minutes', title: 'Pending'},
+      {time: '3:30 pm',  length: '35 minutes', title: 'Brittany Storoz'},
       {time: '4:10 pm',  length: '35 minutes', title: 'Ben Orenstein'},
       {time: '4:45 pm',  length: '5 minutes',  title: 'Thanks & Closing'},
       {time: '4:50 pm',  length: '85 minutes', title: 'Social Hour'}
@@ -31,12 +31,6 @@ class ApplicationController < ActionController::Base
         bio: "Sarah is a Chief Consultant at DevMynd Software where she works to help clients untangle the most tangled projects. She is a co-founder of <a href='http://railsbridge.org'>RailsBridge</a>, board member of <a href='http://rubycentral.org'>Ruby Central</a>, frequent speaker at <a href='http://confreaks.tv/presenters/sarah-mei'>technical conferences</a>, and prolific author of tweet storms actually worth reading.",
         img: 'speakers/sarah-mei.jpg',
         twitter: 'https://twitter.com/sarahmei'
-      },
-
-      { name: 'Brittany Storoz',
-        bio: "Brittany has been an EMT, swim coach, and sports reporter but there is little she loves more than programming. She’s been a programmer for almost ten years, focusing on front-end HTML, CSS and JavaScript while working at Mozilla, The New York Times, and teaching at The Turing School.",
-        img: 'speakers/brittany-storoz.jpg',
-        twitter: 'https://twitter.com/brittanystoroz'
       },
 
       { name: 'Defy Ventures',
@@ -67,6 +61,12 @@ class ApplicationController < ActionController::Base
         bio: "Vaidehi is a software engineer at Tilde, where she works on Skylight—your favorite Rails profiler! She enjoys building and breaking code, but she loves creating empathetic engineering teams a whole lot more. In her spare time, she runs <a href='https://medium.com/basecs'>basecs</a>, a weekly writing series that explores the fundamentals of computer science.",
         img: 'speakers/vaidehi-joshi.jpg',
         twitter: 'https://twitter.com/sarahmei'
+      },
+
+      { name: 'Brittany Storoz',
+        bio: "Brittany has been an EMT, swim coach, and sports reporter but there is little she loves more than programming. She’s been a programmer for almost ten years, focusing on front-end HTML, CSS and JavaScript while working at Mozilla, The New York Times, and teaching at The Turing School.",
+        img: 'speakers/brittany-storoz.jpg',
+        twitter: 'https://twitter.com/brittanystoroz'
       },
 
       { name: 'Ben Orenstein',
