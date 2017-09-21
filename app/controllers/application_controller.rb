@@ -11,9 +11,9 @@ class ApplicationController < ActionController::Base
       {time: '9:00 am',  length: '60 minutes', title: 'Registration, Continental Breakfast'},
       {time: '10:00 am', length: '5 minutes',  title: 'Opening/Kickoff'},
       {time: '10:05 am', length: '35 minutes', title: 'Sarah Mei'},
-      {time: '10:45 am', length: '35 minutes', title: '(pending)'},
+      {time: '10:45 am', length: '35 minutes', title: 'Amy Chen'},
       {time: '11:25 am',  length: '10 minutes', title: 'Community Spotlight: Defy Ventures'},
-      {time: '11:40 am', length: '35 minutes', title: 'Amy Chen'},
+      {time: '11:40 am', length: '35 minutes', title: 'April Wensel'},
       {time: '12:15 pm', length: '60 minutes', title: 'Lunch'},
       {time: '1:10 pm',  length: '5 minutes',  title: 'Reconvene'},
       {time: '1:15 pm', length: '35 minutes', title: 'Anjuan Simmons'},
@@ -33,16 +33,22 @@ class ApplicationController < ActionController::Base
         twitter: 'https://twitter.com/sarahmei'
       },
 
+      { name: 'Amy Chen',
+        bio: "Amy is a software engineer at Rancher Labs. She is passionate about open source, containers, orchestration tools, Go, and salsa dancing. Amy runs a youtube channel <a href='https://www.youtube.com/AmyCodes'>Amy Codes</a> where she talks about technical and non-technical aspects of being a software engineer.",
+        img: 'speakers/amy-chen.jpg',
+        twitter: 'https://twitter.com/theamycode'
+      },
+
       { name: 'Defy Ventures',
         bio: "Defy Ventures works to 'transform the hustle' of currently and formerly incarcerated Entrepreneurs-in-Training by offering intensive leadership development, business plan competitions, executive mentoring, financial investment, and startup incubation.",
         img: 'speakers/defy-ventures.jpg',
         twitter: 'https://twitter.com/defyventures'
       },
 
-      { name: 'Amy Chen',
-        bio: "Amy is a software engineer at Rancher Labs. She is passionate about open source, containers, orchestration tools, Go, and salsa dancing. Amy runs a youtube channel <a href='https://www.youtube.com/AmyCodes'>Amy Codes</a> where she talks about technical and non-technical aspects of being a software engineer.",
-        img: 'speakers/amy-chen.jpg',
-        twitter: 'https://twitter.com/theamycode'
+      { name: 'April Wensel',
+        bio: "April Wensel spent the past decade as a software engineer and technical leader at various Silicon Valley startups before starting <a href='http://compassionatecoding.com'>Compassionate Coding</a>, a company that’s bringing emotional intelligence to the software development community. She loves running marathons, cooking vegan food, and teaching coding to kids.",
+        img: 'speakers/april-wensel.jpg',
+        twitter: 'https://twitter.com/aprilwensel'
       },
 
       { name: 'Anjuan Simmons',
