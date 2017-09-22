@@ -11,14 +11,14 @@ class ApplicationController < ActionController::Base
       {time: '9:00 am',  length: '60 minutes', title: 'Registration, Continental Breakfast'},
       {time: '10:00 am', length: '5 minutes',  title: 'Opening/Kickoff'},
       {time: '10:05 am', length: '35 minutes', title: 'Sarah Mei'},
-      {time: '10:45 am', length: '35 minutes', title: 'Amy Chen'},
-      {time: '11:25 am',  length: '10 minutes', title: 'Community Spotlight: Defy Ventures'},
+      {time: '10:45 am', length: '35 minutes', title: 'Amy Chen: <em>Building Helm Charts from the Ground Up: An Introduction to Kubernetes</em>'},
+      {time: '11:25 am',  length: '10 minutes', title: '<em>Community Spotlight</em>: Carrie Simon from Defy Ventures'},
       {time: '11:40 am', length: '35 minutes', title: 'April Wensel: <em>A Discussion on Responsible Hiring & Team Building</em>'},
       {time: '12:15 pm', length: '60 minutes', title: 'Lunch'},
       {time: '1:10 pm',  length: '5 minutes',  title: 'Reconvene'},
       {time: '1:15 pm', length: '35 minutes', title: 'Anjuan Simmons: <em>Leadership Lessons from the Agile Manifesto</em>'},
       {time: '1:55 pm',  length: '35 minutes', title: 'Adam Cuppy'},
-  		{time: '2:35 pm',  length: '10 minutes', title: 'Community Spotlight: Announcing Soon'},
+  		{time: '2:35 pm',  length: '10 minutes', title: '<em>Community Spotlight</em>: Elaine Marino from Equili'},
       {time: '2:50 pm',  length: '35 minutes', title: 'Vaidehi Joshi'},
       {time: '3:30 pm',  length: '35 minutes', title: 'Brittany Storoz'},
       {time: '4:10 pm',  length: '35 minutes', title: 'Ben Orenstein'},
@@ -62,6 +62,12 @@ class ApplicationController < ActionController::Base
         img: 'speakers/adam-cuppy.jpg',
         twitter: 'https://twitter.com/adamcuppy'
       },
+
+      # { name: 'Equili',
+      #   bio: "Equili is spearheading an industry-wide movement to transform diversity in the tech space. We design, implement, and manage events, workshops, and content aimed at bringing more diversity into the tech arena.",
+      #   img: 'speakers/equili.jpg',
+      #   twitter: 'https://twitter.com/_equili'
+      # },
 
       { name: 'Vaidehi Joshi',
         bio: "Vaidehi is a software engineer at Tilde, where she works on Skylight—your favorite Rails profiler! She enjoys building and breaking code, but she loves creating empathetic engineering teams a whole lot more. In her spare time, she runs <a href='https://medium.com/basecs'>basecs</a>, a weekly writing series that explores the fundamentals of computer science.",
