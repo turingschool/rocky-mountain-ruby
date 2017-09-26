@@ -63,11 +63,11 @@ class ApplicationController < ActionController::Base
         twitter: 'https://twitter.com/adamcuppy'
       },
 
-      # { name: 'Equili',
-      #   bio: "Equili is spearheading an industry-wide movement to transform diversity in the tech space. We design, implement, and manage events, workshops, and content aimed at bringing more diversity into the tech arena.",
-      #   img: 'speakers/equili.jpg',
-      #   twitter: 'https://twitter.com/_equili'
-      # },
+      { name: 'Equili',
+        bio: "Equili is spearheading an industry-wide movement to transform diversity in the tech space. We design, implement, and manage events, workshops, and content aimed at bringing more diversity into the tech arena.",
+        img: 'speakers/equili.jpg',
+        twitter: 'https://twitter.com/_equili'
+      },
 
       { name: 'Vaidehi Joshi',
         bio: "Vaidehi is a software engineer at Tilde, where she works on Skylight—your favorite Rails profiler! She enjoys building and breaking code, but she loves creating empathetic engineering teams a whole lot more. In her spare time, she runs <a href='https://medium.com/basecs'>basecs</a>, a weekly writing series that explores the fundamentals of computer science.",
