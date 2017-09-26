@@ -17,7 +17,7 @@ class ApplicationController < ActionController::Base
       {time: '12:15 pm', length: '60 minutes', title: 'Lunch'},
       {time: '1:10 pm',  length: '5 minutes',  title: 'Reconvene'},
       {time: '1:15 pm', length: '35 minutes', title: 'Anjuan Simmons: <em>Leadership Lessons from the Agile Manifesto</em>'},
-      {time: '1:55 pm',  length: '35 minutes', title: 'Adam Cuppy'},
+      {time: '1:55 pm',  length: '35 minutes', title: 'Adam Cuppy: <em>Trust Me</em>'},
   		{time: '2:35 pm',  length: '10 minutes', title: '<em>Community Spotlight</em>: Elaine Marino from Equili'},
       {time: '2:50 pm',  length: '35 minutes', title: 'Vaidehi Joshi: <em>The (Non-Perfect) Mathematics of Trust</em>'},
       {time: '3:30 pm',  length: '35 minutes', title: 'Brittany Storoz: <em>Comparative Error Handling: Learning by Making All the Mistakes</em>'},
